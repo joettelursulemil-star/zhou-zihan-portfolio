@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ZHOU ZIHAN | 完整作品集</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "surface-container-low": "#f2f4f6",
+        "primary-container": "#e9d5ff",
+        "tertiary": "#50616b",
+        "tertiary-fixed-dim": "#b7c9d5",
+        "surface-tint": "#67587b",
+        "primary-fixed": "#eddcff",
+        "on-tertiary-fixed": "#0c1e26",
+        "on-tertiary-container": "#53636e",
+        "on-surface": "#191c1e",
+        "on-error-container": "#93000a",
+        "secondary-fixed": "#f1dde9",
+        "outline-variant": "#cbc4ce",
+        "on-surface-variant": "#49454d",
+        "on-secondary-fixed": "#231820",
+        "tertiary-container": "#cee0ec",
+        "on-primary-fixed-variant": "#4f4062",
+        "on-tertiary": "#ffffff",
+        "error-container": "#ffdad6",
+        "outline": "#7b757e",
+        "surface-container-highest": "#e0e3e5",
+        "secondary-container": "#efdae6",
+        "surface-container": "#eceef0",
+        "inverse-on-surface": "#eff1f3",
+        "error": "#ba1a1a",
+        "surface-dim": "#d8dadc",
+        "inverse-primary": "#d2bfe8",
+        "on-secondary": "#ffffff",
+        "on-tertiary-fixed-variant": "#384953",
+        "on-secondary-fixed-variant": "#51434c",
+        "on-primary-container": "#6a5a7e",
+        "inverse-surface": "#2d3133",
+        "secondary": "#695a64",
+        "background": "#f7f9fb",
+        "on-secondary-container": "#6e5e68",
+        "on-background": "#191c1e",
+        "tertiary-fixed": "#d3e5f1",
+        "surface-container-high": "#e6e8ea",
+        "secondary-fixed-dim": "#d5c1cd",
+        "on-primary": "#ffffff",
+        "surface": "#f7f9fb",
+        "on-error": "#ffffff",
+        "surface-variant": "#e0e3e5",
+        "on-primary-fixed": "#221534",
+        "surface-container-lowest": "#ffffff",
+        "primary-fixed-dim": "#d2bfe8",
+        "surface-bright": "#f7f9fb",
+        "primary": "#67587b"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px",
+        "squircle": "40px"
+      },
+      spacing: {
+        "container-padding-desktop": "64px",
+        "section-gap": "120px",
+        "container-padding-mobile": "24px",
+        "gutter": "24px",
+        "base": "8px"
+      },
+      fontFamily: {
+        "label-sm": ["geist"],
+        "display-lg-mobile": ["manrope"],
+        "display-lg": ["manrope"],
+        "body-lg": ["inter"],
+        "headline-md": ["manrope"],
+        "body-md": ["inter"],
+        "label-caps": ["Inter"]
+      },
+      fontSize: {
+        "label-sm": ["13px", {"lineHeight": "1.4", "letterSpacing": "0.03em", "fontWeight": "500"}],
+        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+      }
+    }
+  }
+}
+</script>
+<style>
+/* ── Global Reset & Base ── */
+html { scroll-behavior: smooth; }
+*, *::selection { box-sizing: border-box; }
+body::selection, *::selection { background: #e9d5ff; color: #6a5a7e; }
+
+/* ── Background ── */
+.bg-mesh-apple {
+  background-color: #f7f9fb;
+  background-image:
+    radial-gradient(at 10% 10%, rgba(233,213,255,0.4) 0px, transparent 40%),
+    radial-gradient(at 90% 10%, rgba(211,229,241,0.4) 0px, transparent 40%),
+    radial-gradient(at 90% 90%, rgba(204,253,241,0.3) 0px, transparent 40%),
+    radial-gradient(at 10% 90%, rgba(239,218,230,0.4) 0px, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* ── Glass ── */
+.glass-panel {
+  backdrop-filter: blur(40px);
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 20px 50px -12px rgba(0,0,0,0.05);
+}
+.glass-card {
+  backdrop-filter: blur(40px);
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.glass-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(103,88,123,0.1);
+}
+
+/* ── Material Icons ── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+
+/* ── Massive BG text ── */
+.massive-bg-text {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  color: rgba(103,88,123,0.04);
+  -webkit-text-stroke: 1px rgba(103,88,123,0.06);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ── Animations ── */
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes scan {
+  0%   { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+.animate-float  { animation: float 8s ease-in-out infinite; }
+
+/* ── Typography helpers ── */
+.kerning-tight { letter-spacing: -0.03em; }
+.kerning-wide  { letter-spacing:  0.2em;  }
+.text-glow-subtle { text-shadow: 0 0 40px rgba(255,255,255,0.6); }
+
+/* ── Section separator ── */
+.section-sep {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(103,88,123,0.15), transparent);
+  margin: 0;
+}
+
+/* ── Section number watermark ── */
+.section-watermark {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: clamp(100px, 18vw, 200px);
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  color: rgba(103,88,123,0.04);
+  -webkit-text-stroke: 1px rgba(103,88,123,0.06);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ── Nav ── */
+#mobile-menu { display: none; }
+#mobile-menu.open { display: flex; }
+.nav-link { transition: color 0.2s; }
+.nav-link.active { color: #67587b; border-bottom: 2px solid rgba(103,88,123,0.5); padding-bottom: 2px; }
+
+/* ── Tag pill ── */
+.tag {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: rgba(103,88,123,0.08);
+  color: #67587b;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Stat chip ── */
+.stat-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 16px;
+  padding: 12px 24px;
+  backdrop-filter: blur(20px);
+}
+
+/* ── Info badge ── */
+.info-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(103,88,123,0.08);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #67587b;
+}
+
+/* ── Img hover zoom ── */
+.img-zoom { transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.img-zoom:hover { transform: scale(1.04); }
+
+/* ── Scroll reveal ── */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* ── VITAFLOW step connector ── */
+.step-line {
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(103,88,123,0.3), rgba(103,88,123,0.05));
+  min-height: 32px;
+  margin: 0 auto;
+}
+
+/* ── Onde monitor card ── */
+.monitor-card {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 24px;
+  backdrop-filter: blur(24px);
+  padding: 20px;
+}
+
+/* ── FURWHISPER SLAM viz ── */
+.slam-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  gap: 2px;
+}
+.slam-dot {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: rgba(103,88,123,0.15);
+}
+.slam-dot.active { background: rgba(103,88,123,0.6); animation: float 2s ease-in-out infinite; }
+
+/* ── Progress bar ── */
+.progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(103,88,123,0.1);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #67587b, #9b87b5);
+  transition: width 1.5s ease;
+}
+
+/* ── Onde heartbeat ── */
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%  { transform: scale(1.2); }
+  28%  { transform: scale(1); }
+  42%  { transform: scale(1.1); }
+  70%  { transform: scale(1); }
+}
+.animate-heartbeat { animation: heartbeat 1.5s ease-in-out infinite; }
+
+/* ── Carousel (合木集 草图) ── */
+.carousel { overflow: hidden; position: relative; }
+.carousel-track { display: flex; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.carousel-slide { flex: 0 0 100%; }
+
+/* ── FURWHISPER emotion LEDs ── */
+@keyframes breathe {
+  0%, 100% { opacity: 0.4; transform: scale(0.9); }
+  50%       { opacity: 1;   transform: scale(1.1); }
+}
+.led-amber { background: #f59e0b; animation: breathe 2s ease-in-out infinite; }
+.led-sky   { background: #38bdf8; animation: breathe 2.5s ease-in-out infinite; }
+.led-pink  { background: #f472b6; animation: breathe 3s ease-in-out infinite; }
+</style>
+</head>
+<body class="bg-mesh-apple text-on-background min-h-screen">
+
+<!-- ═══════════════════════════════════════
+     SHARED NAVIGATION BAR
+═══════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center glass-panel rounded-full mt-6 mx-auto w-[90%] max-w-7xl px-8 py-4 transition-all duration-300">
+  <a href="#hero" class="font-display-lg font-bold tracking-tight text-on-surface hover:text-primary transition-colors text-xl">ZHOU ZIHAN</a>
+
+  <div class="hidden md:flex items-center gap-7">
+    <a href="#graphic"    class="nav-link text-on-surface-variant hover:text-primary font-label-sm text-label-sm">图文设计</a>
+    <a href="#hemuji"     class="nav-link text-on-surface-variant hover:text-primary font-label-sm text-label-sm">合木集</a>
+    <a href="#vitaflow"   class="nav-link text-on-surface-variant hover:text-primary font-label-sm text-label-sm">VITAFLOW</a>
+    <a href="#onde"       class="nav-link text-on-surface-variant hover:text-primary font-label-sm text-label-sm">Onde</a>
+    <a href="#furwhisper" class="nav-link text-on-surface-variant hover:text-primary font-label-sm text-label-sm">FURWHISPER</a>
+    <a href="#about"      class="nav-link text-on-surface-variant hover:text-primary font-label-sm text-label-sm">关于我</a>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm font-semibold hover:scale-95 active:scale-90 transition-transform shadow-lg">联系我</button>
+    <button id="hamburger" class="md:hidden p-2 rounded-full hover:bg-primary-container transition-colors">
+      <span class="material-symbols-outlined text-[20px]">menu</span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile dropdown -->
+<div id="mobile-menu" class="fixed top-24 left-0 right-0 z-40 mx-4 glass-panel rounded-2xl p-6 flex-col gap-3">
+  <a href="#graphic"    class="block font-semibold py-2 text-on-surface border-b border-outline-variant/30 hover:text-primary" onclick="closeMobileMenu()">01 图文设计</a>
+  <a href="#hemuji"     class="block font-semibold py-2 text-on-surface border-b border-outline-variant/30 hover:text-primary" onclick="closeMobileMenu()">02 合木集</a>
+  <a href="#vitaflow"   class="block font-semibold py-2 text-on-surface border-b border-outline-variant/30 hover:text-primary" onclick="closeMobileMenu()">03 VITAFLOW</a>
+  <a href="#onde"       class="block font-semibold py-2 text-on-surface border-b border-outline-variant/30 hover:text-primary" onclick="closeMobileMenu()">04 Onde</a>
+  <a href="#furwhisper" class="block font-semibold py-2 text-on-surface border-b border-outline-variant/30 hover:text-primary" onclick="closeMobileMenu()">05 FURWHISPER</a>
+  <a href="#about"      class="block font-semibold py-2 text-on-surface hover:text-primary" onclick="closeMobileMenu()">关于我</a>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HERO / LANDING
+═══════════════════════════════════════ -->
+<section id="hero" class="relative w-full min-h-screen flex flex-col items-center justify-center pt-28 pb-20 px-container-padding-mobile md:px-container-padding-desktop overflow-hidden">
+  <div class="absolute inset-0 flex items-center justify-center z-0 overflow-hidden pointer-events-none select-none">
+    <div class="massive-bg-text" style="font-size:clamp(100px,22vw,400px);">PORTFOLIO</div>
+  </div>
+  <div class="relative z-10 w-full max-w-6xl flex flex-col items-center text-center">
+    <div class="glass-panel px-5 py-2 rounded-full mb-12 animate-float border-white/40">
+      <span class="font-label-sm text-[11px] text-primary/70 uppercase kerning-wide font-bold flex items-center gap-3">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary/40 animate-pulse"></span>
+        Selected Works 2024
+      </span>
+    </div>
+    <h1 class="font-display-lg font-extrabold text-on-surface kerning-tight text-glow-subtle mb-6" style="font-size:clamp(48px,9vw,92px);line-height:1.05;">
+      周子寒<span class="text-primary/80">作品集</span>
+    </h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant/70 kerning-wide uppercase font-medium mb-2">求职岗位：设计实习生</p>
+    <p class="font-label-sm text-label-sm text-primary/50 tracking-[0.3em] font-bold mb-14">2026 — 2027</p>
+    <div class="flex flex-col md:flex-row items-center gap-5 mb-14">
+      <a href="#graphic" class="group relative px-10 py-5 bg-primary text-on-primary rounded-full font-headline-md text-headline-md flex items-center gap-3 overflow-hidden shadow-[0_20px_40px_-10px_rgba(103,88,123,0.35)] hover:shadow-[0_28px_56px_-12px_rgba(103,88,123,0.45)] transition-all hover:-translate-y-1">
+        <span class="relative z-10">探索作品</span>
+        <span class="material-symbols-outlined relative z-10 transition-transform group-hover:translate-x-1">arrow_forward</span>
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+      </a>
+      <a href="#graphic" class="group px-10 py-5 rounded-full border border-white/60 text-on-surface font-headline-md text-headline-md glass-panel hover:bg-white/80 transition-all flex items-center gap-2 hover:-translate-y-1">
+        <span class="material-symbols-outlined text-primary/60 group-hover:rotate-12 transition-transform">list_alt</span>
+        <span>查看目录</span>
+      </a>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-4 opacity-70">
+      <div class="stat-chip"><span class="font-display-lg text-[28px] font-bold text-primary">5</span><span class="font-label-caps text-label-caps text-on-surface-variant/60 mt-1">精选项目</span></div>
+      <div class="stat-chip"><span class="font-display-lg text-[28px] font-bold text-primary">48+</span><span class="font-label-caps text-label-caps text-on-surface-variant/60 mt-1">实战记录</span></div>
+      <div class="stat-chip"><span class="font-display-lg text-[28px] font-bold text-primary">26/27</span><span class="font-label-caps text-label-caps text-on-surface-variant/60 mt-1">Timeline</span></div>
+    </div>
+  </div>
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-primary/50">
+    <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] animate-pulse">Scroll to Explore</span>
+    <div class="w-px h-14 bg-gradient-to-b from-primary/50 via-primary/20 to-transparent"></div>
+  </div>
+  <div class="absolute left-12 bottom-12 hidden md:block">
+    <div class="glass-panel px-6 py-4 rounded-2xl flex flex-col items-start">
+      <span class="font-display-lg text-[24px] leading-none text-primary/80 font-bold">26/27</span>
+      <span class="font-label-caps text-label-caps text-on-surface-variant/60 uppercase mt-1">Timeline</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 01 — 图文设计
+═══════════════════════════════════════ -->
+<div class="section-sep"></div>
+<section id="graphic" class="relative pt-20 pb-24 px-container-padding-mobile md:px-container-padding-desktop scroll-mt-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Section Header -->
+    <div class="flex items-end gap-4 mb-16 reveal">
+      <span class="section-watermark select-none pointer-events-none">01</span>
+      <div class="pb-3">
+        <p class="font-label-caps text-label-caps text-primary/50 uppercase tracking-[0.2em] mb-2">Visual Design</p>
+        <h2 class="font-display-lg text-[48px] md:text-[64px] text-on-surface leading-none kerning-tight">图文设计</h2>
+      </div>
+    </div>
+
+    <!-- ── Case 1: DJI AVATA 2 ── -->
+    <div class="glass-card rounded-squircle overflow-hidden mb-10 reveal">
+      <!-- Hero image full width -->
+      <div class="relative overflow-hidden h-72 md:h-[500px]">
+        <img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnOsimpsiks_5GYTcUjTgge6zPXb7Hx9sOAb4D8jxEKbmuYarZ0uO1N9FxstfdbUQfvQi31xclFlYNXOgDEwiJdqpZTE4w39MDuMuueTsMYCvV1cUxNWQCBgrKAvnjIQVzFYgXPEwS-nP3zoStH4Mo2HHs70TdcKrv7I9i4xfA_hhRBDlE6CTfDtMfOqz4qXVDEd3GmKDghnjBm8i8kcnUQ5zvAurJxKHq8zAIHTYocVI2eHZjj94QICEzGMgg5ffR2lNtYclRecoq" alt="DJI Avata 2"/>
+        <div class="absolute top-6 left-6 flex gap-2">
+          <div class="info-badge"><span class="material-symbols-outlined text-[14px]">bolt</span>高性能表现</div>
+          <div class="info-badge"><span class="material-symbols-outlined text-[14px]">videocam</span>4K/60 HDR</div>
+        </div>
+        <div class="absolute bottom-6 right-6">
+          <div class="glass-panel px-4 py-2 rounded-xl">
+            <p class="text-[10px] font-bold text-on-surface-variant/60 uppercase tracking-wider">MODEL NO.</p>
+            <p class="font-display-lg font-bold text-primary text-[18px]">AV2-2024</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-primary-container text-primary px-3 py-1 rounded-full font-label-caps text-[11px] font-bold">2024</span>
+          <span class="text-on-surface-variant/60 font-label-caps text-[11px] uppercase tracking-wider">工业设计案例研究</span>
+        </div>
+        <h3 class="font-headline-md text-[32px] md:text-[40px] text-on-surface mb-3">DJI AVATA 2</h3>
+        <p class="text-primary/70 font-headline-md text-[20px] mb-6">天空，重构想象。</p>
+        <p class="font-body-md text-body-md text-on-surface-variant mb-10 max-w-3xl">灵动无人机设计的典范，将沉浸式飞行物理特性与尖端影像捕捉完美融合。</p>
+
+        <!-- Three feature cols -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          <div class="glass-panel rounded-2xl p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="material-symbols-outlined text-primary">timer</span>
+              <span class="font-label-sm font-bold text-on-surface-variant uppercase tracking-wider text-[11px]">续航：持久爆发力</span>
+            </div>
+            <p class="font-display-lg font-bold text-primary text-[40px] leading-none mb-2">23</p>
+            <p class="font-label-caps text-on-surface-variant/60">分钟飞行时间</p>
+            <p class="font-body-md text-on-surface-variant mt-3 text-sm">通过优化空气动力学外壳与高效电机，Avata 2 在复杂环境中依然能保持长达 23 分钟的沉浸式飞行。</p>
+          </div>
+          <div class="glass-panel rounded-2xl p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="material-symbols-outlined text-primary">image</span>
+              <span class="font-label-sm font-bold text-on-surface-variant uppercase tracking-wider text-[11px]">拍摄：视角飞跃</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant mb-3 text-sm">搭载 1/1.3 英寸图像传感器，支持 4K/60fps 超清视频与 10-bit D-Log M 规格。</p>
+            <ul class="space-y-1">
+              <li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-green-500 text-[16px]">check_circle</span>155° 超广视角</li>
+              <li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-green-500 text-[16px]">check_circle</span>RockSteady 3.0+</li>
+              <li class="flex items-center gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-green-500 text-[16px]">check_circle</span>HorizonSteady</li>
+            </ul>
+          </div>
+          <div class="glass-panel rounded-2xl p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="material-symbols-outlined text-primary">flight</span>
+              <span class="font-label-sm font-bold text-on-surface-variant uppercase tracking-wider text-[11px]">飞跃：灵动身姿</span>
+            </div>
+            <p class="font-body-md text-on-surface-variant text-sm">紧凑的涵道式防护设计，在狭窄空间内游刃有余。一键花飞功能让复杂动作触手可及。</p>
+            <a href="#" class="inline-flex items-center gap-1 text-primary font-bold text-sm mt-4 hover:gap-2 transition-all">了解更多灵动设计<span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+          </div>
+        </div>
+
+        <!-- Poster section -->
+        <div class="mb-10">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="h-px flex-1 bg-outline-variant/40"></div>
+            <span class="font-label-caps text-label-caps text-on-surface-variant/50 uppercase tracking-wider">案例深化</span>
+            <div class="h-px flex-1 bg-outline-variant/40"></div>
+          </div>
+          <h4 class="font-headline-md text-[24px] text-on-surface mb-2">宣传海报深化设计</h4>
+          <p class="text-primary/60 font-label-sm text-sm font-semibold mb-6">视觉灵感</p>
+          <h5 class="font-headline-md text-[20px] text-on-surface mb-4">捕捉速度张力与电影镜头语言</h5>
+          <p class="font-body-md text-on-surface-variant mb-8 max-w-4xl">我们从极限运动摄影中汲取灵感，通过大范围的动态模糊与广角畸变的视觉组合，将 DJI Avata 2 的第一视角飞行体验转化为极具冲击力的视觉符号。每一帧画面的构建都旨在强化"身临其境"的感官体验。</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApYUWpidGD4TRmVL34u77flq-LmSj9SHPyQDONfUJaC0c9YS41BMfiEUCmkddl3R0qS1EUiIN5tZfDkgXrB8xEGozLAUPkcU4UGgfMLFZBZ8A1dbhZaFaAXvPJwXQGPw5QGagJw0Z8Wgfejq-z2OHROH69ENForlc7AcjZy-NMlKfHL5J1jlEjBMYSlbi-k_aVTHD_glL04113uBgNFp2sziraax2ZSYk2VeY-0xmoJBXkku9snOplbN7lv1WvR7e40U7SJqkqpHQM" alt="海报深化视觉"/></div>
+            <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQV7z7FqQIAGRxJKJdKZnLLgfcEkwhrlZKnZJ9ZRX4V0F0wVPZDmVX8oxQbGEDEy8DdWlzkecxZCxqsrSXgVK7cDYMmkQgZ4VZzj250OpPah6MzNcFwTfnSqaH2Lu1xgERxZIyx-jaqwvhFjORADW_YbJTAgsuWEgC_wx0YdrY71mXHjwE_0Qga_mX9xeI9uF_SkrNxMqyQpGj3XHV21bPUERmfdPu2NceSOdgSMuNmoy77uuEch-3acBNUvqLIYSOW5gx0WXJqZwy" alt="设计细节参考"/></div>
+          </div>
+
+          <!-- 4 design detail cards -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div class="glass-panel rounded-2xl p-5">
+              <span class="material-symbols-outlined text-primary mb-2">palette</span>
+              <p class="font-semibold text-sm text-on-surface mb-1">高对比色彩</p>
+              <p class="text-xs text-on-surface-variant/70">选用橙黑、蓝黑等对比配色，勾勒出无人机在不同空域的科技质感。</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-5">
+              <span class="material-symbols-outlined text-primary mb-2">grid_view</span>
+              <p class="font-semibold text-sm text-on-surface mb-1">动态化构图</p>
+              <p class="text-xs text-on-surface-variant/70">利用对角线构图引导视觉流动，赋予静态画面灵动的飞行轨迹。</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-5">
+              <span class="material-symbols-outlined text-primary mb-2">text_fields</span>
+              <p class="font-semibold text-sm text-on-surface mb-1">现代无衬线字体</p>
+              <p class="text-xs text-on-surface-variant/70">采用简洁的无衬线字体构建骨架，梳理清晰的视觉信息层级。</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-5">
+              <span class="material-symbols-outlined text-primary mb-2">space_dashboard</span>
+              <p class="font-semibold text-sm text-on-surface mb-1">疏密留白</p>
+              <p class="text-xs text-on-surface-variant/70">以大面积留白平衡信息密度，创造如同飞行时掠过的呼吸感。</p>
+            </div>
+          </div>
+
+          <!-- 影像美学 -->
+          <div class="flex items-center gap-3 mb-6">
+            <div class="h-px flex-1 bg-outline-variant/40"></div>
+            <span class="font-label-caps text-label-caps text-on-surface-variant/50 uppercase tracking-wider">影像美学</span>
+            <div class="h-px flex-1 bg-outline-variant/40"></div>
+          </div>
+          <h5 class="font-headline-md text-[20px] text-on-surface mb-4">影像内核的质感跃升</h5>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+            <div class="glass-panel rounded-2xl p-5">
+              <p class="font-bold text-sm text-on-surface mb-2">1/1.3 英寸大底传感器</p>
+              <p class="text-xs text-on-surface-variant/70">搭载旗舰级影像系统，捕获丰富的光影层次。在极高对比度的环境下依然能呈现出细腻的画质。</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-5">
+              <p class="font-bold text-sm text-on-surface mb-2">电影级视觉叙事</p>
+              <p class="text-xs text-on-surface-variant/70">摒弃繁复的视觉干扰，以大面积航拍素材构建海报张力，让每一张展示都成为讲述飞行故事的电影剧照。</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-5">
+              <p class="font-bold text-sm text-on-surface mb-2">定义飞行的艺术</p>
+              <p class="text-xs text-on-surface-variant/70">模拟 FPV 第一人称视角，将空中穿梭的速度感与临场感，转化为触手可及的视觉冲击。</p>
+            </div>
+          </div>
+          <div class="overflow-hidden rounded-2xl mb-8"><img class="img-zoom w-full h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApCvHHRj5LVDxqNyRzdbaG8YU98yrZBXMFSkIquUMp2W6iMTFgDkqp7xQKamSYiEifwCjUJYgsZYtxGinuawlgbegtI1AOBN7IvmglMF4JnYsCZNez32Qir39eekuF1gs9fiFItf77dW5GUDaCbZC-QTzz3MaDddel3K12yhPQIacry5Q4ZoAslf8m1F35KLXRBuH4EaayGR70otE3w9yCafzEYYwemEIADSNAA7KxS2H22GCD3WoIbjUnle0EH6oONgIPt1LicWx9" alt="影像美学"/></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Case 2: 中国地图 ── -->
+    <div class="glass-card rounded-squircle overflow-hidden reveal">
+      <div class="overflow-hidden h-72 md:h-[420px]">
+        <img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXOoW7sp2rP7-Im20LZ-hKbqkSv6d40fER6ggFaMNnmIEn6kEfR2IN3rRdauktbMHa7hRdduA3rzUAmIJD89Z9byoMGq7K3-RB1AuNamCP064Ax7llpcSZknfQ9jo5B5GHj4XXH5XW3CpjMu0ZD1wRx6kCVCs_EkxtB3BAfO63VHOd-uMv_xtbp__Fdmjm4pUQdQLmT5kDrcpabqeTCsj9EMty9uHTafCy_M7mSHrrhAaS9hlZHssvjOwTRKakZGlUul_mm7xMkE4T" alt="中国地图"/>
+      </div>
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-primary-container text-primary px-3 py-1 rounded-full font-label-caps text-[11px] font-bold">2024</span>
+          <span class="text-on-surface-variant/60 font-label-caps text-[11px] uppercase tracking-wider">案例研究</span>
+        </div>
+        <h3 class="font-headline-md text-[28px] text-on-surface mb-2">这里是中国</h3>
+        <p class="text-primary/70 font-headline-md text-[18px] mb-6">地理数据与视觉叙事</p>
+        <p class="font-body-md text-on-surface-variant mb-8 max-w-3xl">通过 QGIS 精准还原中国地貌，在地理信息的科学严谨中寻找视觉美感。这是一次地理跨界设计的探索。</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+          <div class="glass-panel rounded-2xl p-5">
+            <span class="material-symbols-outlined text-primary mb-2">database</span>
+            <p class="font-bold text-sm text-on-surface mb-2">数据来源</p>
+            <p class="text-xs text-on-surface-variant/70">基于 NASADEM 与 SRTM 全球高程模型，结合最新地理国情普查矢量边界数据，确保每一个坐标的真实有效。</p>
+          </div>
+          <div class="glass-panel rounded-2xl p-5">
+            <span class="material-symbols-outlined text-primary mb-2">tune</span>
+            <p class="font-bold text-sm text-on-surface mb-2">处理逻辑</p>
+            <p class="text-xs text-on-surface-variant/70">利用 QGIS 进行瓦片切割与多波段合成，通过地形渲染引擎还原三级阶梯的震撼落差。</p>
+          </div>
+          <div class="glass-panel rounded-2xl p-5">
+            <span class="material-symbols-outlined text-primary mb-2">palette</span>
+            <p class="font-bold text-sm text-on-surface mb-2">视觉转化</p>
+            <p class="text-xs text-on-surface-variant/70">抛弃传统的绿棕色调，采用轻盈玻璃质感与极光色系，赋予地理数据以情绪。</p>
+          </div>
+        </div>
+
+        <div class="overflow-hidden rounded-2xl mb-8"><img class="img-zoom w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkgKcA5EJcFM9pGblB3-7xoLr4Vq7i0du3YDPVuAUIvk9mfgX4wepdhLti6lE3P__Y4j0s3dwZlmDWB3Cf8QK0ZKK1zzw1TzweS5E8u7M1nXEvEMFhIb5qGJLKVKyBRCefHoj4NbaZAuTRyZQX4WGHG3AiaznzpRMnUuQ0HE2T7te0HLmkxlLGNJU_43Sv7srWRaq-_un1lwZleC7N1IGVENldKuqRF7UDPAtI-5BtpG2hyYHoueEpKU5woXKyn5Zi9h-RTLsimbr0" alt="地图2"/></div>
+
+        <p class="font-body-md text-on-surface-variant mb-6">地理信息不再只是枯燥的参数，它可以是艺术品的载体。通过调整光照方位角与海拔倍增系数，我们将地貌特征转化为一种具有科技律动感的视觉语言。</p>
+        <div class="flex flex-wrap gap-2 mb-8">
+          <span class="tag">#QGIS</span>
+          <span class="tag">#数据可视化</span>
+          <span class="tag">#数字艺术</span>
+        </div>
+
+        <!-- 3 process images -->
+        <h5 class="font-headline-md text-[18px] text-on-surface mb-4">处理细节与审美演变</h5>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXRA62QFXUFyseSJnA8OfzN-ZK-GW_zgiRk49RtN5vTVIP7Hv1FBb2WOfOqk-I9zAR47aWzcl7NG3ndq1_JLbcV51mbAu-RHuI5XCK1YDO6rl-56_5HgpegQOyTeHyyVEHfEFCzlwraC_p4MggBhtOVQPyMMkH7VrVYFEHgQPqcv21PZiiJJuofHBWAy5CmuqO08UI7RVtmrgfIchMvXtZ0vIz3zJOMGrhvpwsag1nS7GpFBtXB5568Z7thf8-96tEIf48QW559sZ4" alt="过程01"/><p class="p-3 text-xs text-on-surface-variant/60 text-center">01. 地形起伏阴影测试</p></div>
+          <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq0-HOmNZcdc7Ub7CPL3xqWIZ_fz9P-JVbXpsyG8xJ5TyPI-APeAfBT1YLPQRQQhq5s6BH_Fz65ff1lmDL5igVZyVIQdelNSRP8pl7C55hemdW3zZ8xN_xi9m6htXpUqABaO8SdL-XHQSjhX7OFTJalMAgf3pn1QWVp1DnX9IbhqB3RmsI_sP3eayhaQdF10mxF0YcflBQWl0H3dW2lZ48zxMVpVlHtqNFka80-1xj7nCNZj21GLaTogemuw4G0eEKThgRajDkd446" alt="过程02"/><p class="p-3 text-xs text-on-surface-variant/60 text-center">02. 极光配色方案研究</p></div>
+          <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxHuOemJ85KrscTTsxFwChI-2rSKsDDDbl7G7dC6Cj-seYuJszDAIgYOYar28NsgBOIWbNoLapGhCwFr9gLAb3N5p3wCy8csy9lVtC7a6_8cHJz0I_9c_kGx0dhrU5cE2QrNP3o-khAKoLSg9mea_AqfnlyAzphhOJaI1c7FM9vi8zwokJe66bRVZHIw4txwSycS0lV4j-qGO7FBP9k1TTsxGkXMAm554uZBAGCiToezKDKdDB3iUkI3OXI_eZE7DEC6B4XM9cFihd" alt="过程03"/><p class="p-3 text-xs text-on-surface-variant/60 text-center">03. 最终视觉合成</p></div>
+        </div>
+
+        <blockquote class="border-l-2 border-primary/40 pl-5 italic text-on-surface-variant mb-8">
+          "Data is the bridge between truth and poetry."<br/>
+          <span class="text-xs not-italic text-on-surface-variant/50 mt-1 block">地理数据的本质是严谨的真实，而设计的使命是让真实变得动人。</span>
+        </blockquote>
+
+        <!-- Final quote block -->
+        <div class="glass-panel rounded-2xl p-8">
+          <p class="font-body-md text-on-surface-variant leading-relaxed mb-6">"在该项目的设计中，我们将工业产品的硬核参数转化为一种视觉诗学。通过大面积的负空间与精致的微交互，我们将 DJI AVATA 2 的技术力剥离至纯粹的感知层面——不仅仅是关于飞行，更是关于如何观看世界。"</p>
+          <div class="flex flex-wrap gap-4 text-xs text-on-surface-variant/60">
+            <span class="info-badge">字体 / GEIST &amp; MANROPE</span>
+            <span class="info-badge">网格 / 12栏流体网格</span>
+            <span class="info-badge">动效 / 弹性缓动</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 02 — 合木集
+═══════════════════════════════════════ -->
+<div class="section-sep"></div>
+<section id="hemuji" class="relative pt-20 pb-24 px-container-padding-mobile md:px-container-padding-desktop scroll-mt-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="flex items-end gap-4 mb-16 reveal">
+      <span class="section-watermark">02</span>
+      <div class="pb-3">
+        <p class="font-label-caps text-label-caps text-primary/50 uppercase tracking-[0.2em] mb-2">Industrial Design</p>
+        <h2 class="font-display-lg text-[48px] md:text-[64px] text-on-surface leading-none kerning-tight">合木集</h2>
+      </div>
+    </div>
+
+    <!-- Hero card -->
+    <div class="glass-card rounded-squircle overflow-hidden mb-10 reveal">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2 overflow-hidden">
+          <img class="img-zoom w-full h-72 md:h-[520px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiR0Oe6QvIvTjANCJs1JoEfVxM9u0h_koo0uzlSUDMDcQcbaMtap9kL6DTkxZM8odcE9i9pWQ0v5ryZHpiXUbYeNpikAlJRKrNsW1sfD_MzKJY6GZoLAMYz9wOVrypqp9Lp-arJZpCbs1dDW-yPlk1x7cupQFdlFeUHPeYkCJB81TXzIzQAY9NwMQHv04tyJekzeKe7olMKPT9oXZPZHnWPp4Kf_CIRddqD6qaX1W5E3oMz_KWmxoG5EPx0J3tQe18arzzRm5SbZ4t" alt="合木集"/>
+        </div>
+        <div class="w-full lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-primary-container text-primary px-3 py-1 rounded-full font-label-caps text-[11px] font-bold">2023</span>
+            <span class="text-on-surface-variant/60 font-label-caps text-[11px] uppercase tracking-wider">工业设计 / 康养</span>
+          </div>
+          <h3 class="font-headline-md text-[32px] text-on-surface mb-2">合木集: Modular Zen</h3>
+          <p class="text-primary/60 font-headline-md text-[16px] italic mb-5">"将森林的律动，凝缩于指尖方寸。"</p>
+          <p class="font-body-md text-on-surface-variant mb-6">探索现代都市人的"数字减压"逻辑。通过触觉交互与模块化重构，建立掌心的宁静场域。</p>
+
+          <!-- 解压推演 -->
+          <div class="glass-panel rounded-2xl p-5 mb-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="material-symbols-outlined text-primary">spa</span>
+              <p class="font-semibold text-sm text-on-surface">解压推演</p>
+            </div>
+            <p class="text-xs text-on-surface-variant/70 mb-3">针对都市焦虑，我们将"解压"行为拆解为：揉捏、滑动、按压与组合。合木集不仅是物件，更是情绪的物理锚点。</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag">模块化</span>
+              <span class="tag">触感优先</span>
+              <span class="tag">数字断连</span>
+            </div>
+          </div>
+
+          <!-- 掌型贴合逻辑 -->
+          <div class="glass-panel rounded-2xl p-5">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="material-symbols-outlined text-primary">pan_tool</span>
+              <p class="font-semibold text-sm text-on-surface">掌型贴合逻辑</p>
+            </div>
+            <p class="text-xs text-on-surface-variant/70 mb-3">基于 300+ 组人机数据采样。曲率设计完美契合掌心"鱼际穴"与"劳宫穴"，在握持时自然引导压力释放。</p>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-surface-container-low rounded-xl p-3 text-center">
+                <p class="font-display-lg font-bold text-primary text-[18px]">R25mm</p>
+                <p class="text-[10px] text-on-surface-variant/60 mt-1">自然弯曲半径</p>
+              </div>
+              <div class="bg-surface-container-low rounded-xl p-3 text-center">
+                <p class="font-display-lg font-bold text-primary text-[18px]">0.05mm</p>
+                <p class="text-[10px] text-on-surface-variant/60 mt-1">榫卯精度</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 核心构造 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[28px] text-on-surface mb-2">核心构造</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">探索东方木作哲学与现代康养技术的深度交融。模块化齿板系统与精密按摩珠构造，为每一次触碰赋予生命力。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-panel rounded-2xl p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="material-symbols-outlined text-primary">view_in_ar</span>
+            <h4 class="font-semibold text-on-surface">核心结构爆炸图</h4>
+          </div>
+          <p class="text-sm text-on-surface-variant mb-5">精密模数化设计的齿板结构，结合动态平衡的按摩珠连接器，实现极致的解压触感。</p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">A</div>
+              <span class="text-sm text-on-surface">顶层齿板</span>
+            </div>
+            <div class="flex items-center gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">B</div>
+              <span class="text-sm text-on-surface">按摩珠球芯</span>
+            </div>
+            <div class="flex items-center gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="w-7 h-7 rounded-lg bg-primary/10 flex items-center justify-center text-xs font-bold text-primary">C</div>
+              <span class="text-sm text-on-surface">基座框架</span>
+            </div>
+          </div>
+        </div>
+        <div class="glass-panel rounded-2xl p-6">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="material-symbols-outlined text-primary">architecture</span>
+            <h4 class="font-semibold text-on-surface">精密咬合</h4>
+          </div>
+          <p class="text-sm text-on-surface-variant mb-5">采用 0.05mm 精度榫卯结构，确保模块化拆装时的稳定性。每一个齿板的弧度均经过人体工程学精密计算。</p>
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="tag">01 模块化</span>
+            <span class="tag">CMF 材质学</span>
+          </div>
+          <a href="#" class="inline-flex items-center gap-1 text-primary font-bold text-sm hover:gap-2 transition-all">了解技术参数<span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CMF 材质 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[28px] text-on-surface mb-2">CMF 材质表现</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">我们严选多种名贵硬木，通过天然木蜡油涂装，最大程度保留木材的原始纹理与呼吸感。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Su Tan -->
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-48"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-XkUXxqu2PdZYZmMnoxdOLPu1-shHarhmeQlvCxFdf_Yl7P9sM3k7Y7rCya4OALTGlNl_1EogfqB2GL14oinw4eKrIjPs9hNE1X1QPGSKP0KYIS_24AbSqK0EtlRqnGzMHxmbngTwH7lfmGe0IxVj5UFN2QYar2HPPZeuy4jzv8dH21rkTVWf_yXPn2tQxiIoZPEkJ6T3OuOpxApBNsM_gICqb2ZMYs0dFOMAwk0NOJUgYDpHtpmcHcMCkWEjMHHcbGCsZGVXHsS6" alt="素檀"/></div>
+          <div class="p-4"><p class="font-semibold text-sm text-on-surface">素檀 · Su Tan</p><p class="text-xs text-on-surface-variant/70 mt-1">色泽古朴，质地极其坚硬，触感温润如玉，散发淡淡清香。</p></div>
+        </div>
+        <!-- 绿檀 -->
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-48"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCnW6eijKRwLEfxAXUhhNKacrNmfNNQd9G14HhZYsAliZFW3jFPvOeTyGlg2KNsw18Qb5wUDLK7-Nr84o7wd8Vrxur-es3AdfgI6WG-NSXTVhzyqh2_leX2RX-vYTXm2kysDMCB3BSejD65cvksv0riFY-BJuB4MlOvuA5uDGkS5YldWHSsU-zS8jdSeohOF4yMGtxxkbSMgtpcK4OPYayvPJZZ103sCFGUtRLIMgGdXJhyCdRFIavwW2569HvwvCZmUfEHhPIzT1w" alt="绿檀"/></div>
+          <div class="p-4"><p class="font-semibold text-sm text-on-surface">绿檀 · Green Sandalwood</p><p class="text-xs text-on-surface-variant/70 mt-1">天然橄榄绿色泽，随着光照加深。木纹如行云流水，富有禅意。</p></div>
+        </div>
+        <!-- 黑胡桃 -->
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-48"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdhu2hc5zmm-QVVRJi85InA484kyyPgEWdTc5Adf5jjTR7TitHP0mCm6eeC-kIOZaH7B5AuNoZBCQbkABeNly-4J3Thf0PqCqZyuYFqwggp1m6PMDIoDC90TY8n9daGlOScb2cpK1nkq9s80Fj8OyPyabEMqrfekMr0CJCnzAy9vYdLqBr2igFaSjk_gDf1gIOog1iqTltiNQLaeA8a1TtbpnHzSl06V0eiBX5fqWjOrgaDbylhdnBsZZKT26OciaILtf6B5KWhQ7G" alt="黑胡桃"/></div>
+          <div class="p-4"><p class="font-semibold text-sm text-on-surface">黑胡桃 · Black Walnut</p><p class="text-xs text-on-surface-variant/70 mt-1">深沉含蓄，极具现代设计感的木材，纹理跳跃且充满张力。</p></div>
+        </div>
+        <!-- 对比图 -->
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-48"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJGb2vhhcOBYaSwEo6-5GcI38NdAqH6X8PneoUgpOxeAIpYsheVwhDnWAmQzCHTBXEGkf9Xj4BF7ML0D5Ksh9Hl8snyfaCXEB4Uxe1rHFWZbIbc0mhbSHS6PPnzZ4R-Wg15j_-h161HyxnqTtTVro04iPkhNt9IJoVElKoKKtyJQ_uNN4_N_zCsDLK-Ei6xQnae9GXJFpgpCOCy9e4foGDutwzxH2lLH2T91St90o4VO0Rkm_VWsH8lIf5MdtUV4gYHhffWLPBCDqm" alt="材质对比"/></div>
+          <div class="p-4">
+            <p class="font-semibold text-sm text-on-surface">材质纹理对比</p>
+            <p class="text-xs text-on-surface-variant/70 mt-1">素檀 / 绿檀 / 黑胡桃</p>
+            <div class="flex gap-2 mt-2"><span class="tag">FSC 认证</span><span class="tag">天然木蜡油</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- 全图 -->
+      <div class="overflow-hidden rounded-2xl mt-6">
+        <img class="img-zoom w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWRu5t2ucQcHgMZdSc4HTFszrCAyCGex_8PrlAuM8PT5IC_s3PTNQUoBmSeO3OSREtJVvzu_fHqgQ3pBHkSoelbOfw8QKSmEx4bYkH6Zt9M_S281dr3-j_5vp9HR0JRgn6jYp2Z-kryvEyYKTecPpKL87Kc40uEJ8aUpZ8X0rp-_gpdYW8aqDipZugazFkaVp0z-4VAAr1usJgiq6kvoA86tIM8p3aQCeIM42jk28YSlcBkxo32UWxL8ujHt9pVNtWKza5QNWxX5_a" alt="合木集全景"/>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="glass-card rounded-squircle p-10 md:p-14 text-center reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-4">生活的艺术，指尖的触感</h3>
+      <p class="font-body-md text-on-surface-variant mb-8 max-w-2xl mx-auto">在快节奏的数字生活中，为身心寻觅一处宁静的岛屿。合木集不仅是一件器物，更是一种关于时间与触碰的生活美学。</p>
+      <button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-md font-semibold hover:scale-95 transition-transform shadow-lg">预约体验</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 03 — VITAFLOW
+═══════════════════════════════════════ -->
+<div class="section-sep"></div>
+<section id="vitaflow" class="relative pt-20 pb-24 px-container-padding-mobile md:px-container-padding-desktop scroll-mt-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="flex items-end gap-4 mb-16 reveal">
+      <span class="section-watermark">03</span>
+      <div class="pb-3">
+        <p class="font-label-caps text-label-caps text-primary/50 uppercase tracking-[0.2em] mb-2">Smart Healthcare</p>
+        <h2 class="font-display-lg text-[48px] md:text-[64px] text-on-surface leading-none kerning-tight">VITAFLOW</h2>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="glass-card rounded-squircle overflow-hidden mb-10 reveal">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2 overflow-hidden">
+          <img class="img-zoom w-full h-72 md:h-[520px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ma5a9tO2LWm4PpVsx8CmhsNMNiarpFiRmLmqxwFHkuXXgcUJWmTMCKQaK1EyAjMHZ7zf5VZYTk-vi2kld_q_QBzzdZ5nRYAFNVLtjMnI3kNALQNRDOEVRLMmj59bnpLSkgAmtQ8UGiH1Oy8e8m6LeZ6PUt-Wi-D_neOckKHLdKFrQVgEWmZOS-IqP8owxrYJOxW9E3Bd_5YRfiwcslynhLFszye9SdVTJ2vAuGN8RGsviB78A0b-CA6Pr9m95v4HaftCZu-pm8yk" alt="VITAFLOW"/>
+        </div>
+        <div class="w-full lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-primary-container text-primary px-3 py-1 rounded-full font-label-caps text-[11px] font-bold">2023</span>
+            <span class="text-on-surface-variant/60 font-label-caps text-[11px] uppercase tracking-wider">智能硬件 / 康养</span>
+          </div>
+          <h3 class="font-headline-md text-[28px] text-on-surface mb-3">VITAFLOW 系统</h3>
+          <p class="font-body-md text-on-surface-variant mb-6">便携式智能艾灸治疗设备 —— 通过现代工业设计与智能集成，重新定义传统养生。VITAFLOW 旨在弥合传统中医 (TCM) 与现代快节奏生活方式之间的鸿沟。</p>
+
+          <!-- 3 feature pills -->
+          <div class="grid grid-cols-3 gap-3 mb-5">
+            <div class="glass-panel rounded-xl p-3 text-center">
+              <span class="material-symbols-outlined text-primary text-[20px]">smoke_free</span>
+              <p class="text-[11px] text-on-surface-variant/70 mt-1 font-semibold">无烟体验</p>
+            </div>
+            <div class="glass-panel rounded-xl p-3 text-center">
+              <span class="material-symbols-outlined text-primary text-[20px]">devices</span>
+              <p class="text-[11px] text-on-surface-variant/70 mt-1 font-semibold">智能控制</p>
+            </div>
+            <div class="glass-panel rounded-xl p-3 text-center">
+              <span class="material-symbols-outlined text-primary text-[20px]">battery_charging_full</span>
+              <p class="text-[11px] text-on-surface-variant/70 mt-1 font-semibold">便携收纳盒</p>
+            </div>
+          </div>
+
+          <!-- 3 pain points -->
+          <div class="space-y-3 mb-5">
+            <div class="glass-panel rounded-xl p-4">
+              <p class="font-semibold text-xs text-primary mb-1">痛点 01 · 传统烟雾与异味</p>
+              <p class="text-xs text-on-surface-variant/70">传统艾灸产生的浓烟和持久异味使其难以在办公环境或公共场所使用。VITAFLOW 利用电子加热模拟艾灸燃烧的红外光谱。</p>
+            </div>
+            <div class="glass-panel rounded-xl p-4">
+              <p class="font-semibold text-xs text-primary mb-1">痛点 02 · 便携性受限</p>
+              <p class="text-xs text-on-surface-variant/70">传统工具笨重且要求使用者保持静止。我们的理疗头极轻且采用无线设计。</p>
+            </div>
+            <div class="glass-panel rounded-xl p-4">
+              <p class="font-semibold text-xs text-primary mb-1">痛点 03 · 温度控制</p>
+              <p class="text-xs text-on-surface-variant/70">不稳定的热量会导致皮肤烫伤。智能传感器提供实时热反馈，确保安全舒缓体验。</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 bg-primary/8 rounded-xl px-4 py-3">
+            <span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+            <span class="font-semibold text-sm text-on-surface">FDA 认证医疗科技</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App teaser + hardware -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 reveal">
+      <div class="glass-card rounded-squircle overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-qngzUvORRESlrBvt63pew1SlSdVoiwF6FCEEuFz37fg5sG7u2d5f4-7dd4Mk__Na7ttXvzoQI35uqrQ2K534P9DzoIo8Ygm_2Q3ZUez6x_phIkgNo76YKg8sl7enn3XCA0AWdKRt-9HdfykzJ4MPJxK_8Rxj0Wgb9rgsoAXML660LLMZTs9SEp7ja68eeh6zu6BPKAFjLHSor3e-3OY3FLni-0VT83Fnl93lg2QZaMRnYSt1_FKM6L7889Jwp017RQ5ItpaFLIaM" alt="App UI"/>
+        </div>
+        <div class="p-6">
+          <h4 class="font-semibold text-on-surface mb-2">解决方案：智慧调和</h4>
+          <p class="text-sm text-on-surface-variant">一个综合系统，包括可穿戴理疗头、智能充电盒以及用于个性化理疗追踪的互联 App。</p>
+        </div>
+      </div>
+      <div class="glass-card rounded-squircle overflow-hidden">
+        <div class="overflow-hidden h-48">
+          <img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyyK5W2JcOlGkNw9_EMZ-sB6q9OO2VLB2l8MK1m9LYXot_n-zdZyvw2J5SOO5RJEZaVNlwZkrX9SMn5ie-35Ro16TbbFRwLUMUYvXl38ioZzSOO5OcAFvhIq8_q6SKOy8wCVtXNAgLoUhYxJe0PdmxiVGAvz0xHx1F_WAdb88_-Xk3TAshe89fhgNm4Zp3s_nadR3j7JZ4jglHB-BxWRok4KTuj4sp-i-Ek-vx-TF7XNg3kyQ-YD342Irbz1" alt="硬件"/>
+        </div>
+        <div class="p-6">
+          <div class="flex flex-wrap gap-4 mb-3">
+            <div class="info-badge"><span class="material-symbols-outlined text-[14px]">touch_app</span>柔感磨砂</div>
+            <div class="info-badge"><span class="material-symbols-outlined text-[14px]">light_mode</span>LED 呼吸灯</div>
+          </div>
+          <p class="text-sm text-on-surface-variant">艾灸头具有 15 度的轮廓偏移，针对颈部、肩部和腰部的多轴应用进行了优化。</p>
+          <div class="flex items-center gap-2 mt-3">
+            <span class="material-symbols-outlined text-primary text-[16px]">eco</span>
+            <span class="text-xs font-semibold text-on-surface">生物兼容性饰面</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interaction steps -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">VITAFLOW 交互逻辑</h3>
+      <p class="font-body-md text-on-surface-variant mb-10">映射物理设备激活与数字协同之间的流动转换</p>
+
+      <div class="flex flex-col md:flex-row gap-4">
+        <!-- Step 1 -->
+        <div class="flex-1 glass-panel rounded-2xl p-5 relative">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[16px]">power_settings_new</span></div>
+            <span class="font-bold text-xs text-on-surface">步骤 01 · 启动</span>
+          </div>
+          <p class="text-xs text-on-surface-variant/70">基座检测到接近，为治疗周期准备好活跃模块。</p>
+          <div class="overflow-hidden rounded-xl mt-4 h-32"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOLkRAO295d6Dj-Uh0K60K9vbZ7O8wCAZp_gfUJdxMrEdb5vNgHonkQW7UvcXeLtCkaIDaK3zx1NIWzFOKm_3zV07L5dg_YziKFiVl9wvn8T3DHRsPxrOWHgnNCZKpD6LTkCuysbJKf0X51zzPHUULun3UjNC0nbTp6maKRo5-W82razXO9VgTvK1avMl-qniuROtJGEezdYkoSLVknOY2A1HKQj2eouocFnApcn9YN0MeaBM01dRO1fUOq9EwyO1G9isYH-rt5s9d" alt="步骤01"/></div>
+        </div>
+        <!-- Step 2 -->
+        <div class="flex-1 glass-panel rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[16px]">cast_connected</span></div>
+            <span class="font-bold text-xs text-on-surface">步骤 02 · 神经握手</span>
+          </div>
+          <p class="text-xs text-on-surface-variant/70 mb-2">超宽带同步技术使手持模块在从基座取出时立即与移动界面连接。</p>
+          <div class="info-badge mb-3"><span class="material-symbols-outlined text-[12px]">bluetooth_connected</span>已同步</div>
+        </div>
+        <!-- Step 3 -->
+        <div class="flex-1 glass-panel rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[16px]">grid_view</span></div>
+            <span class="font-bold text-xs text-on-surface">步骤 03 · 疗法选择</span>
+          </div>
+          <div class="space-y-2 mb-3">
+            <div class="bg-primary text-white rounded-lg px-3 py-1.5 text-xs font-semibold">艾灸模式</div>
+            <div class="bg-surface-container-low rounded-lg px-3 py-1.5 text-xs">深层脉冲</div>
+            <div class="bg-surface-container-low rounded-lg px-3 py-1.5 text-xs">生物电疗</div>
+          </div>
+          <div class="overflow-hidden rounded-xl h-28"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgbV6FgyqNe7BFlFM3VkPFbkUeN3ofbhq6em2Ht-QBFlFM3VkPFbkUeN3ofbhq6em2Ht-Q" alt="步骤03" onerror="this.style.display='none'"/></div>
+        </div>
+        <!-- Step 4 -->
+        <div class="flex-1 glass-panel rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[16px]">monitoring</span></div>
+            <span class="font-bold text-xs text-on-surface">步骤 04 · 实时编排</span>
+          </div>
+          <p class="text-xs text-on-surface-variant/70 mb-3">实时触觉反馈和温度调节，确保疗程始终处于治疗有效区间。</p>
+          <div class="progress-bar mb-2"><div class="progress-fill" style="width:60%"></div></div>
+          <div class="flex justify-between text-xs text-on-surface-variant/60"><span>0 分钟</span><span>进行中</span><span>15 分钟</span></div>
+        </div>
+        <!-- Step 5 -->
+        <div class="flex-1 glass-panel rounded-2xl p-5">
+          <div class="flex items-center gap-2 mb-3">
+            <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[16px]">task_alt</span></div>
+            <span class="font-bold text-xs text-on-surface">步骤 05 · 疗后洞察</span>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="bg-surface-container-low rounded-lg p-2 text-center"><p class="text-[10px] text-on-surface-variant/60">疗程时间</p><p class="font-bold text-sm text-primary">15:00</p></div>
+            <div class="bg-surface-container-low rounded-lg p-2 text-center"><p class="text-[10px] text-on-surface-variant/60">平均温度</p><p class="font-bold text-sm text-primary">42.5°C</p></div>
+            <div class="bg-surface-container-low rounded-lg p-2 text-center"><p class="text-[10px] text-on-surface-variant/60">强度等级</p><p class="font-bold text-sm text-primary">Level 4</p></div>
+            <div class="bg-surface-container-low rounded-lg p-2 text-center"><p class="text-[10px] text-on-surface-variant/60">电量状态</p><p class="font-bold text-sm text-primary">98%</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- App screenshots -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">无缝互联关怀</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">与移动端伴侣应用无缝集成，监控治疗时长、热强度，并长期追踪健康记录。</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-52 md:h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0uTcC0MkIiSWFX3-3GY2kpeX0evH8uAtmPrP51tcYMdnPYuGlJVOjn7e47-x-cxMTPNSDVP3x-QjwBHZ9T_WK7PNBEgIoF7GPijXPioZmxrD18c78jw1Boa1GSotk7cTWXRzg68CvJTSlUlmyxshwNE85wV97tUefYp4x1aEYZbQ9SoB0a900FKPB7Ms0r1Rn-RgT2iGD49PJ4j9pcMIf6pV_WuVOaOh2TQGjP6F1XTEmTbdN9gFmk-9jWxTbEfGfD_B8B7bFuwwz" alt="App1"/></div>
+        <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-52 md:h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZF2PXp9wD1z1noHwy5zzwtr4f5DtvHtxdslLqopmiUiEkoOdq5Hl7YOkwYz55KyU4cdqidxL846ROf9J5CqN3bhfbx4gMSxiaFm--PUi8d6QnHmY5OF-wxtBtAYECHgGr5spYrEzynVBw-XWL0rzhzhGuQS81rD3-5M1TAypyBBIWd7HHPWcEfkMYLV8RW8RYjGGfMDgJ_KJcn286CMrTtmmQOeNylbPwfeek2rD8stQZdkGz_SxX6n-LjExgZYAl_NyOChBOxg6R" alt="App2"/></div>
+        <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-52 md:h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1epa7j-ubnsSQWXk09zrjjMFz1-goHZ-FNgdQyZcm1srpKxm4jSiBoJMe5HMmaHKttfPLjJZSXdW08v42hf5Ya3cTpiCQT5eEnUMXBxoZ_mplroSp7XGTWvvyPfWCZyE2CLyKafDy3HGO7PbQVI_1lEBFJvzFJiL9jmohEq9BYyLswK8Vl5MvYZERFBnQbVx7qadavc--QD3mBAPFQR8lXnJX3riO37bmK3h3pYGRZambcopNY3-Jl-v-cd6r-cF9WZp7z_wohKEL" alt="App3"/></div>
+        <div class="overflow-hidden rounded-2xl"><img class="img-zoom w-full h-52 md:h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzys5rBV49mRa1NZbqiWTnu6k1cyCqacNb2dma5Gphr4v-W_aPs1XaHWlbJJAy4NlJ08TbRhhygSeZOHA73YrjnM7lFUsLF5mXTuHhh_-DtPGAZRgWplwRZym-dl7u8VpVQlZsS8tiCSh70NYWzVXf4kRHPHieYE1G3QZ-M4dwW9P14WNZeBpI04gpJINLp4mF1WdCI_bexsKBNiA3WMUzX5aePltq1jWpbfuisbWdKD0SNZ8hY2R67kAmiTwn1xDmWInreZeHdZHH" alt="App4"/></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 04 — Onde
+═══════════════════════════════════════ -->
+<div class="section-sep"></div>
+<section id="onde" class="relative pt-20 pb-24 px-container-padding-mobile md:px-container-padding-desktop scroll-mt-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="flex items-end gap-4 mb-16 reveal">
+      <span class="section-watermark">04</span>
+      <div class="pb-3">
+        <p class="font-label-caps text-label-caps text-primary/50 uppercase tracking-[0.2em] mb-2">Product Design</p>
+        <h2 class="font-display-lg text-[48px] md:text-[64px] text-on-surface leading-none kerning-tight">Onde</h2>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="glass-card rounded-squircle overflow-hidden mb-10 reveal">
+      <div class="flex flex-col lg:flex-row-reverse">
+        <div class="w-full lg:w-1/2 overflow-hidden">
+          <img class="img-zoom w-full h-72 md:h-[520px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMevK7zJIJmguq0XGM_Vr4FWvlL7TmADAmC06ZCMixDUApGrC-uiQ9GY2rLWhmGYBHxazVgqb8MjjZwv4-yp530feWaFNm6P2YjaonM-Tt_Uqh0eZZEJPzSMMsgGSVKw2yNcpRnkppryQbzA1-7Jt0i36Cy59nWes84ycm2MogHajSkqMHmltznbnTFtUouRBLg6EFG76km3b7bzWfPsV6EU9Z18rf8iacD3q3RO8CmZeX_dcPCXeX5mF7KMo5epA41hP_8j_sobqL" alt="Onde"/>
+        </div>
+        <div class="w-full lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="bg-primary-container text-primary px-3 py-1 rounded-full font-label-caps text-[11px] font-bold">2024</span>
+            <span class="text-on-surface-variant/60 font-label-caps text-[11px] uppercase tracking-wider">Conceptual Design</span>
+          </div>
+          <h3 class="font-headline-md text-[28px] text-on-surface mb-2">04 Onde：设计定义</h3>
+          <p class="text-primary/60 text-sm font-semibold mb-4">Concept: Fluid Longevity · Material: Sustainable Polymers</p>
+          <p class="font-body-md text-on-surface-variant mb-4">源自自然韵律的成长伴侣 — 重新定义新生儿睡眠空间的流变之美。</p>
+          <p class="font-body-md text-on-surface-variant mb-6">Onde（意为"波浪"）的灵感源自大自然中最平静却充满力量的节奏。我们提取了水面波纹的有机曲线，将其转化为智能摇篮的物理形态。这种形态不仅在视觉上消除了工业产品的冷峻感，更在功能上模拟了母体子宫的包覆感。</p>
+
+          <div class="grid grid-cols-3 gap-3 mb-5">
+            <div class="glass-panel rounded-xl p-3 text-center">
+              <p class="font-display-lg font-bold text-primary text-[18px]">3:1</p>
+              <p class="text-[10px] text-on-surface-variant/60 mt-1">伸缩比例</p>
+            </div>
+            <div class="glass-panel rounded-xl p-3 text-center">
+              <p class="font-display-lg font-bold text-primary text-[18px]">80%</p>
+              <p class="text-[10px] text-on-surface-variant/60 mt-1">碳足迹削减目标</p>
+            </div>
+            <div class="glass-panel rounded-xl p-3 text-center">
+              <p class="font-display-lg font-bold text-primary text-[18px]">&lt;15N</p>
+              <p class="text-[10px] text-on-surface-variant/60 mt-1">拉伸阻力</p>
+            </div>
+          </div>
+
+          <!-- 灵感与可持续 -->
+          <div class="space-y-3">
+            <div class="glass-panel rounded-xl p-4">
+              <div class="flex items-center gap-2 mb-1"><span class="material-symbols-outlined text-primary text-[16px]">waves</span><p class="font-semibold text-sm text-on-surface">灵感：波浪的律动</p></div>
+              <p class="text-xs text-on-surface-variant/70">色彩灵感取自晨曦、暮云与潮汐</p>
+            </div>
+            <div class="glass-panel rounded-xl p-4">
+              <div class="flex items-center gap-2 mb-1"><span class="material-symbols-outlined text-primary text-[16px]">eco</span><p class="font-semibold text-sm text-on-surface">可持续共生</p></div>
+              <p class="text-xs text-on-surface-variant/70">选用100%可循环海洋塑料纤维与天然软木底座，致力于建立与自然的良性连接。</p>
+            </div>
+          </div>
+          <blockquote class="border-l-2 border-primary/30 pl-4 italic text-sm text-on-surface-variant/70 mt-5">"我们不只是在设计一件家具，而是在设计一个能随着生命节奏呼吸的、充满爱意的微环境。"<br/><span class="text-xs not-italic text-on-surface-variant/50">— Zhou Zihan, Principal Designer</span></blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- 机械结构 -->
+    <div class="glass-card rounded-squircle overflow-hidden mb-10 reveal">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/2 overflow-hidden">
+          <img class="img-zoom w-full h-72 md:h-[420px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKLTJsuJEMH8lf4qjWjk32bokZz0zdwXmuGa_bfx-Hd_SKqOiXjKCawI2b9GgmzGjACvWpNM6blV4R7kIqBxJbVqMJYrrS171wYGw544KDamtIFW-KA32SplsFzci-T7rAw4tSVudqEeThOEEMz-MXv6qT3jPzWBZFd6oiLWm3aYQjLhm2T4ECaHWgz6NiEt9VzJ7Kx4wV8GzOIEQXwh2p1EJZLumKAa-2m_dHOsgOigXK5LL-Vq1LdAL0kY5JxgRtjMhdX9FAvNz3" alt="机械结构"/>
+        </div>
+        <div class="w-full lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <h3 class="font-headline-md text-[24px] text-on-surface mb-4">机械结构解析</h3>
+          <p class="font-body-md text-on-surface-variant mb-6">适配不同成长阶段的伸缩艺术 —— Onde 床架系统通过精密模数化结构，实现从摇篮到单人床的无缝跨度转换。</p>
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="glass-panel rounded-2xl p-5">
+              <div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-primary text-[16px]">architecture</span><span class="font-bold text-xs">导轨静音系统</span></div>
+              <p class="text-xs text-on-surface-variant/70">采用专利高分子滚轮技术，确保拉伸过程无阻力、无噪音。</p>
+            </div>
+            <div class="glass-panel rounded-2xl p-5">
+              <div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-primary text-[16px]">lock_open_right</span><span class="font-bold text-xs">多重安全锁</span></div>
+              <p class="text-xs text-on-surface-variant/70">双向锁扣自动落座，防止使用过程中意外回缩。</p>
+            </div>
+          </div>
+          <div class="glass-panel rounded-2xl p-5 mb-5">
+            <div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-primary text-[16px]">linear_scale</span><span class="font-bold text-sm text-on-surface">丝滑转换</span></div>
+            <p class="text-xs text-on-surface-variant/70 mb-3">从 120cm 扩展至 200cm，均可单人轻松操作。</p>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="text-[10px] text-on-surface-variant/60">拉伸阻力</p><p class="font-bold text-primary">&lt; 15N</p></div>
+              <div class="bg-surface-container-low rounded-xl p-3 text-center"><p class="text-[10px] text-on-surface-variant/60">档位调节</p><p class="font-bold text-primary">5 级阶梯</p></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <div class="info-badge"><span class="material-symbols-outlined text-[14px]">verified</span>ISO 安全认证</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 智能监测系统 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">智能监测系统</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">全天候守护，精准捕获成长轨迹。Onde 侧屏 UI 设计与成长追踪技术全解析。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Monitor UI -->
+        <div class="monitor-card">
+          <div class="flex items-center justify-between mb-5">
+            <div>
+              <p class="font-bold text-lg text-on-surface">Deep Sleep</p>
+              <p class="text-xs text-on-surface-variant/60">Steady and Deep</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-pulse"></span>
+              <span class="text-xs text-on-surface-variant/60">Current Status</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="bg-white/60 rounded-xl p-4 flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary animate-heartbeat">favorite</span>
+              <div><p class="font-display-lg font-bold text-2xl text-primary">72</p><p class="text-[10px] text-on-surface-variant/60">Heart BPM</p></div>
+            </div>
+            <div class="bg-white/60 rounded-xl p-4">
+              <p class="text-[10px] text-on-surface-variant/60">Oxygen Level</p>
+              <p class="font-display-lg font-bold text-2xl text-primary">98%</p>
+            </div>
+            <div class="bg-white/60 rounded-xl p-4">
+              <p class="text-[10px] text-on-surface-variant/60">Temp</p>
+              <p class="font-display-lg font-bold text-2xl text-primary">36.5°</p>
+            </div>
+            <div class="bg-white/60 rounded-xl p-4">
+              <p class="text-[10px] text-on-surface-variant/60">Room Humid</p>
+              <p class="font-display-lg font-bold text-2xl text-primary">45%</p>
+            </div>
+          </div>
+          <!-- Growth milestone -->
+          <div class="bg-primary/8 rounded-xl p-4 text-center">
+            <p class="font-display-lg font-bold text-3xl text-primary">+1.2cm</p>
+            <p class="text-xs text-on-surface-variant/60 mt-1">本月身高增长已超过 85% 的同龄儿童，营养吸收进入高效期。</p>
+          </div>
+        </div>
+        <!-- Sensing tech -->
+        <div class="glass-panel rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-primary">biotech</span><h4 class="font-semibold text-on-surface">感测技术解析</h4></div>
+            <p class="text-sm text-on-surface-variant mb-5">采用非接触式超宽带 (UWB) 雷达感应与多谱段生物识别技术。无需佩戴任何传感器，捕捉呼吸与心跳频率。</p>
+            <ul class="space-y-2 text-sm text-on-surface-variant">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>实时多模态融合算法</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>端侧加密隐私保护系统</li>
+            </ul>
+          </div>
+          <div class="mt-5 bg-white/60 rounded-xl p-4 text-center">
+            <p class="font-label-caps text-label-caps text-on-surface-variant/50 uppercase">Growth Milestone</p>
+            <p class="font-display-lg font-bold text-4xl text-primary mt-1">+1.2cm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 生活场景 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 reveal">
+      <!-- 初生期 -->
+      <div class="glass-card rounded-squircle overflow-hidden">
+        <div class="overflow-hidden h-56"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoNhMhoZ9Ao_Wywxv0pk5gnRjuz-nWcSr3ulKskDHES_qMgbwFfuyK-Q2zuCsMZJPCz0f9w3W_oSpc7KnOhty2j2aFkRAckQcUcve_U7N6V31OlXDTYCNLPC0OTRlrtPSDkorm7FAzBYNU66hiCjsU0IN-m7GCNjsiR65j89fy17ROUXIzCotazRQZQZ1bjKHxjW9MvpBtLIv_9tc3dqliDfKX2CWVfhVtMqqC8q4lOhBvrZq82qFsBmpQLPzUyD9KBrqhAFAc2gS0" alt="初生期"/></div>
+        <div class="p-7">
+          <div class="tag mb-3">0–6 个月</div>
+          <h4 class="font-headline-md text-[20px] text-on-surface mb-3">生活场景：初生期</h4>
+          <p class="font-body-md text-on-surface-variant mb-4">母婴零距离的温柔守护</p>
+          <div class="glass-panel rounded-xl p-5 mb-4">
+            <div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-primary text-[16px]">bed</span><span class="font-bold text-sm text-on-surface">极致紧凑形态</span></div>
+            <p class="text-xs text-on-surface-variant/70 mb-3">针对初生婴儿的生理与心理需求，采用最紧凑的包裹式设计。</p>
+            <div class="grid grid-cols-2 gap-2">
+              <div class="bg-surface-container-low rounded-lg p-2 text-center"><p class="font-bold text-primary">99%</p><p class="text-[10px] text-on-surface-variant/60">透气织物覆盖</p></div>
+              <div class="bg-surface-container-low rounded-lg p-2 text-center"><p class="font-bold text-primary">0mm</p><p class="text-[10px] text-on-surface-variant/60">床边无缝对接</p></div>
+            </div>
+          </div>
+          <ul class="space-y-2 text-sm text-on-surface-variant">
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">verified</span>易达性：触手可及的安抚距离</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[16px]">verified</span>温润感：圆润倒角与亲肤材质</li>
+          </ul>
+          <blockquote class="border-l-2 border-primary/30 pl-3 italic text-xs text-on-surface-variant/60 mt-4">"在这个阶段，最好的设计是那些能让父母几乎忘记它的存在，而只专注于那份新生的喜悦。"</blockquote>
+        </div>
+      </div>
+      <!-- 成长演变 -->
+      <div class="glass-card rounded-squircle overflow-hidden">
+        <div class="overflow-hidden h-56"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCWCQY99vRKDTm8JPmERTUlUnhrX8kEfyPGhAPPVZzoR9b90IMukmrQ-tlMmI4MPxiR_EXZgEcPDfAWdB9cmZTe6UMGgPOG63vO8xYVSEqGcFpQO4AVXlxmRVWEfWHnosX9VR-MiFB7wtasKtEbPWxvZ-XoPexZ4i6GudLdXeTtsBEMn3PQFjTD-TREa73B0ajiVdnfHfrDWejIY4cnoGnnaZ5TljjxyeOGV57H5tM4N6jNMu0Neyvsz1OEvtNGK3Ix7WuMVmh0l06" alt="成长演变"/></div>
+        <div class="p-7">
+          <div class="tag mb-3">6 个月–3 岁</div>
+          <h4 class="font-headline-md text-[20px] text-on-surface mb-3">生活场景：成长演变</h4>
+          <p class="font-body-md text-on-surface-variant mb-4">伴随成长的空间延伸</p>
+          <div class="glass-panel rounded-xl p-5 mb-4">
+            <div class="flex items-center gap-2 mb-2"><span class="material-symbols-outlined text-primary text-[16px]">directions_run</span><span class="font-bold text-sm text-on-surface">探索阶段 (6M-3Y)</span></div>
+            <p class="text-xs text-on-surface-variant/70 mb-3">空间向外延伸 40%，转化为低矮的学习桌与活动区域，鼓励独立探索。</p>
+            <div class="bg-primary/8 rounded-lg p-3 text-center"><p class="font-bold text-2xl text-primary">40%</p><p class="text-[10px] text-on-surface-variant/60">空间有效利用率提升</p></div>
+          </div>
+          <!-- 空间延伸逻辑 -->
+          <div class="space-y-3">
+            <div class="flex items-start gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">1</div>
+              <div><p class="font-semibold text-xs text-on-surface">模组重组</p><p class="text-xs text-on-surface-variant/60">卸载侧边护栏，重组为支撑架构，实现功能从"约束"到"支撑"的转变。</p></div>
+            </div>
+            <div class="flex items-start gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">2</div>
+              <div><p class="font-semibold text-xs text-on-surface">重心迁移</p><p class="text-xs text-on-surface-variant/60">整体重心降低 15cm，适配幼儿爬行与站立后的高度需求。</p></div>
+            </div>
+            <div class="flex items-start gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="w-6 h-6 rounded-full bg-primary text-white text-xs flex items-center justify-center font-bold flex-shrink-0 mt-0.5">3</div>
+              <div><p class="font-semibold text-xs text-on-surface">感官适配</p><p class="text-xs text-on-surface-variant/60">增加可替换的触觉面板，伴随成长的认知需求提供物理交互界面。</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="glass-card rounded-squircle p-10 md:p-14 text-center reveal">
+      <div class="flex items-center gap-2 justify-center mb-4"><span class="material-symbols-outlined text-primary">auto_awesome</span></div>
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-4">开启更具生命力的数字未来</h3>
+      <p class="font-body-md text-on-surface-variant mb-8 max-w-2xl mx-auto">设计不应止步于屏幕。Onde 的旅程才刚刚开始，我们诚邀您一起探索感官交互的无限可能。</p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-md font-semibold hover:scale-95 transition-transform shadow-lg">合作洽谈</button>
+        <a href="#" class="glass-panel px-8 py-4 rounded-full font-headline-md font-semibold hover:bg-white/70 transition-all text-on-surface">查看全部作品</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SECTION 05 — FURWHISPER
+═══════════════════════════════════════ -->
+<div class="section-sep"></div>
+<section id="furwhisper" class="relative pt-20 pb-24 px-container-padding-mobile md:px-container-padding-desktop scroll-mt-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="flex items-end gap-4 mb-16 reveal">
+      <span class="section-watermark">05</span>
+      <div class="pb-3">
+        <p class="font-label-caps text-label-caps text-primary/50 uppercase tracking-[0.2em] mb-2">AI Robotics</p>
+        <h2 class="font-display-lg text-[48px] md:text-[64px] text-on-surface leading-none kerning-tight">FURWHISPER</h2>
+      </div>
+    </div>
+
+    <!-- Video hero -->
+    <div class="glass-card rounded-squircle overflow-hidden mb-10 reveal">
+      <div class="relative h-72 md:h-[500px] overflow-hidden">
+        <img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDLXK7KXn6m4o_mzWAAc4CtfIqpApb_c4uUm4edobW36gR6-AofkYcFMzdpIDfSXcJLvvQ9zzTDtQLU3WfihckCDbKy1Ppv-7Y_w4lk1NuUORp9Le526Orhr5ris0wB-TPYa1KTGvBAZODK65WbDict4KbL10Cy-essgTQPKoWkszQ3LLRCrVoGLR5EmFIPfFMflRfdRiOiPbVj2ThIcArCvZQ0Ab3Txs-WtVvUFE0k03pHEpOkzAerS9wlInFse8z6SAWFg-mDyE0" alt="FURWHISPER"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <button class="w-16 h-16 rounded-full bg-white/80 backdrop-blur-md flex items-center justify-center hover:scale-110 transition-transform shadow-xl">
+            <span class="material-symbols-outlined text-primary text-[28px]">play_arrow</span>
+          </button>
+        </div>
+        <div class="absolute top-5 left-5 glass-panel px-3 py-1.5 rounded-full text-xs font-bold text-on-surface">项目展示视频 1:00</div>
+        <div class="absolute bottom-5 right-5 glass-panel px-3 py-1.5 rounded-full text-xs font-semibold text-primary">Design Case Study</div>
+      </div>
+      <div class="p-8 md:p-12">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="bg-primary-container text-primary px-3 py-1 rounded-full font-label-caps text-[11px] font-bold">2024</span>
+          <span class="text-on-surface-variant/60 font-label-caps text-[11px] uppercase tracking-wider">AI 硬件 / 宠物科技</span>
+        </div>
+        <h3 class="font-headline-md text-[28px] text-on-surface mb-3">FURWHISPER: 核心概念与痛点分析</h3>
+        <p class="font-body-md text-on-surface-variant mb-8 max-w-3xl">针对独居宠物的焦虑与交互缺失，重新定义陪伴。通过硬件交互与AI感知的深度融合，为伴侣动物构建一个跨越物理距离的数字港湾。</p>
+
+        <!-- Vision statement image -->
+        <div class="overflow-hidden rounded-2xl mb-8">
+          <img class="img-zoom w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDLXK7KXn6m4o_mzWAAc4CtfIqpApb_c4uUm4edobW36gR6-AofkYcFMzdpIDfSXcJLvvQ9zzTDtQLU3WfihckCDbKy1Ppv-7Y_w4lk1NuUORp9Le526Orhr5ris0wB-TPYa1KTGvBAZODK65WbDict4KbL10Cy-essgTQPKoWkszQ3LLRCrVoGLR5EmFIPfFMflRfdRiOiPbVj2ThIcArCvZQ0Ab3Txs-WtVvUFE0k03pHEpOkzAerS9wlInFse8z6SAWFg-mDyE0" alt="Vision Statement"/>
+        </div>
+
+        <!-- 3 pain points -->
+        <h4 class="font-headline-md text-[20px] text-on-surface mb-5">核心痛点挖掘</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+          <div class="glass-panel rounded-2xl p-5">
+            <span class="material-symbols-outlined text-primary mb-2">sentiment_dissatisfied</span>
+            <p class="font-bold text-sm text-on-surface mb-2">情感缺失 (Emotional Gap)</p>
+            <p class="text-xs text-on-surface-variant/70">传统摄像头仅提供"窥视"视角，无法建立双向的实时反馈。宠物在镜头外仍处于情感孤岛，缺乏有效的互动回应。</p>
+          </div>
+          <div class="glass-panel rounded-2xl p-5">
+            <span class="material-symbols-outlined text-primary mb-2">videocam_off</span>
+            <p class="font-bold text-sm text-on-surface mb-2">环境局限 (Environmental Limits)</p>
+            <p class="text-xs text-on-surface-variant/70">固定监控设备存在大量视觉盲区。当宠物进入其他房间或躲藏时，看护功能完全失效，无法实现全屋路径的持续跟踪。</p>
+          </div>
+          <div class="glass-panel rounded-2xl p-5">
+            <span class="material-symbols-outlined text-primary mb-2">directions_run</span>
+            <p class="font-bold text-sm text-on-surface mb-2">运动不足 (Lack of Activity)</p>
+            <p class="text-xs text-on-surface-variant/70">长时间的室内禁锢导致宠物肥胖与心理压抑。独居期间宠物需要定时的物理激励与体能激活，以维持健康的生理状态。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 功能模块 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">FURWHISPER: 功能模块拆解</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">以极简工业设计语言，重新定义人宠跨时空交互。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-40"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyNglgAgZYtjTFWP-Hc93NyrPvXHca5bcmOz5mMXQ1jsqm_7IdzqDsYsBe5W0dFfXisa7dineMaKA5b09Ea2al0nWeI1jv77tFn73JeXNP8Li4eFG5-u576mO5HMT737GJLp3nLtw6byVFYc1XKBdTOvi41CaUL1igv18i6Rbix6BuHKhqZZnVKkyKlCE7x2s_9AYptodSUE7nu9Zd_2Oa5W6ABoLSVz-NFrlgCFgrCMl7Y70PBDwphu2-FnEwTWsi6XEeVF2XT6vd" alt="广角视野"/></div>
+          <div class="p-4">
+            <div class="flex items-center gap-1 mb-1"><span class="material-symbols-outlined text-primary text-[14px]">videocam</span><p class="font-semibold text-sm text-on-surface">105° 广角视野</p></div>
+            <p class="text-xs text-on-surface-variant/70 mb-2">实时捕捉每一个萌动瞬间。</p>
+            <div class="flex gap-1"><span class="tag">4K HDR</span><span class="tag">Low Light</span></div>
+          </div>
+        </div>
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-40"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg8LD4_k0bPVctF05J0HBi5pLlMq2LPAEmSDEflIrfIjegHe0kaNMUNRBtBHI70A1AWeYLu_aElNw-zU_7-yLJH3x5E0Bz8ELeCFV2qSaGfWUx4jwbdrBrqDhXwE8RabzJS_vkwle0zx-D2iHbB2U1VI1nI9PW9gIPJcPzUe9-8efQFOPZDuCpzwDjvlhXH0YAjYCXTSIvwJfGKm3SdBViX2bZyh1nniy41Gkbvbz5cNoK0WZiOMWOkm--IQ0b4lAeApNH6EwscjbB" alt="巡航"/></div>
+          <div class="p-4">
+            <div class="flex items-center gap-1 mb-1"><span class="material-symbols-outlined text-primary text-[14px]">explore</span><p class="font-semibold text-sm text-on-surface">全屋自动巡航</p></div>
+            <p class="text-xs text-on-surface-variant/70">智能避障，灵动穿梭于家居空间，确保无死角监测。</p>
+          </div>
+        </div>
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-40"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT8yst_FfIV8z-W0CYuTvmfRM91zZoiFBV7cWrElvalm-jQBBd9OIZxMwAjBzuk_db2oOWpaZ9Xj3gFJ4dvah6nMJHZhR8vKrR-3Tk_QIgGy6CrXMRo1hOTDDScGu-KySFnUNrlkvnAwLqfSLCmG1yDBe50jgdMAxzcIl4VSwe4PK-0ovYMvmf2ZWjQ0vwh1FZQsI4FrJi7x-sshM_fymlMHSxKFVGOl8PGd3ot_nuk1t6Iz8N5sWsbFobkB0eEZvq-RkHsB4Pa2xu" alt="语音"/></div>
+          <div class="p-4">
+            <div class="flex items-center gap-1 mb-1"><span class="material-symbols-outlined text-primary text-[14px]">graphic_eq</span><p class="font-semibold text-sm text-on-surface">双向语音交互</p></div>
+            <p class="text-xs text-on-surface-variant/70">随时随地，听见爱宠的呼吸。高保真音频单元还原真实音色。</p>
+          </div>
+        </div>
+        <div class="glass-panel rounded-2xl overflow-hidden">
+          <div class="overflow-hidden h-40"><img class="img-zoom w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaHJaiyWnwX3Nq3pO0e0nwnkhZixz9IMwltIuVf6Zp-qvKeSeErGbqKtV3rGCdcjM0ftbwcSwYu54XYmTG_jqC0oANoq3bKDN1j_0qYpnWzWylYeec9TYeeDQ8LxBYny7nzezNmJrMvaJmTG3C6gWa4F7KqXc6IOhbj2SW5_jfjBCS2G9BYbwf1IWwQb3osvQd5NvT9EYNQc0eBHoAJIVtttoCgIne4nx6H1YR_arcvQM0ZxkNnTEieISuUrda77mklMqGg3TRJpzZ" alt="情绪"/></div>
+          <div class="p-4">
+            <div class="flex items-center gap-1 mb-1"><span class="material-symbols-outlined text-primary text-[14px]">psychology</span><p class="font-semibold text-sm text-on-surface">情绪监测系统</p></div>
+            <p class="text-xs text-on-surface-variant/70 mb-2">AI 识别宠物的精神状态并及时通过移动端进行异常反馈。</p>
+            <div class="info-badge text-[10px]">AI Analysis Active</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLAM 运动逻辑 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">FURWHISPER: 运动逻辑与避障轨迹</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">利用 SLAM 算法实现全屋地图构建，配合红外与超声波传感器，实现毫米级避障。FURWHISPER 不仅仅是移动，而是在空间中优雅地穿梭。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- SLAM viz -->
+        <div class="glass-panel rounded-2xl p-6">
+          <div class="flex items-center justify-between mb-4">
+            <div class="info-badge">0.02ms · LIVE SLAM FEED</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></div><span class="text-xs text-on-surface-variant/60">Mapping in progress...</span></div>
+          </div>
+          <!-- Dot grid SLAM visualization -->
+          <div class="grid gap-1 mb-4" style="grid-template-columns:repeat(24,1fr)">
+            <script>
+            // Will be rendered as static dots via CSS
+            </script>
+            <!-- 48 static dots representing SLAM grid -->
+            <div class="w-2 h-2 rounded-full bg-primary/50"></div><div class="w-2 h-2 rounded-full bg-primary/20"></div><div class="w-2 h-2 rounded-full bg-primary/40"></div><div class="w-2 h-2 rounded-full bg-primary/15"></div><div class="w-2 h-2 rounded-full bg-primary/60"></div><div class="w-2 h-2 rounded-full bg-primary/20"></div><div class="w-2 h-2 rounded-full bg-primary/35"></div><div class="w-2 h-2 rounded-full bg-primary/10"></div><div class="w-2 h-2 rounded-full bg-primary/50"></div><div class="w-2 h-2 rounded-full bg-primary/25"></div><div class="w-2 h-2 rounded-full bg-primary/40"></div><div class="w-2 h-2 rounded-full bg-primary/15"></div><div class="w-2 h-2 rounded-full bg-primary/55"></div><div class="w-2 h-2 rounded-full bg-primary/30"></div><div class="w-2 h-2 rounded-full bg-primary/45"></div><div class="w-2 h-2 rounded-full bg-primary/20"></div><div class="w-2 h-2 rounded-full bg-primary/60"></div><div class="w-2 h-2 rounded-full bg-primary/10"></div><div class="w-2 h-2 rounded-full bg-primary/35"></div><div class="w-2 h-2 rounded-full bg-primary/50"></div><div class="w-2 h-2 rounded-full bg-primary/25"></div><div class="w-2 h-2 rounded-full bg-primary/40"></div><div class="w-2 h-2 rounded-full bg-primary/15"></div><div class="w-2 h-2 rounded-full bg-primary/60"></div>
+            <div class="w-2 h-2 rounded-full bg-primary/30"></div><div class="w-2 h-2 rounded-full bg-primary/55"></div><div class="w-2 h-2 rounded-full bg-primary/20"></div><div class="w-2 h-2 rounded-full bg-primary/45"></div><div class="w-2 h-2 rounded-full bg-primary/10"></div><div class="w-2 h-2 rounded-full bg-primary/65"></div><div class="w-2 h-2 rounded-full bg-primary/25"></div><div class="w-2 h-2 rounded-full bg-primary/40"></div><div class="w-2 h-2 rounded-full bg-primary/15"></div><div class="w-2 h-2 rounded-full bg-primary/55"></div><div class="w-2 h-2 rounded-full bg-primary/30"></div><div class="w-2 h-2 rounded-full bg-primary/45"></div><div class="w-2 h-2 rounded-full bg-primary/20"></div><div class="w-2 h-2 rounded-full bg-primary/60"></div><div class="w-2 h-2 rounded-full bg-primary/10"></div><div class="w-2 h-2 rounded-full bg-primary/35"></div><div class="w-2 h-2 rounded-full bg-primary/50"></div><div class="w-2 h-2 rounded-full bg-primary/25"></div><div class="w-2 h-2 rounded-full bg-primary/40"></div><div class="w-2 h-2 rounded-full bg-primary/15"></div><div class="w-2 h-2 rounded-full bg-primary/60"></div><div class="w-2 h-2 rounded-full bg-primary/30"></div><div class="w-2 h-2 rounded-full bg-primary/45"></div><div class="w-2 h-2 rounded-full bg-primary/20"></div>
+          </div>
+          <div class="flex items-center justify-between text-xs">
+            <div class="info-badge text-red-600 bg-red-50">OBSTACLE DETECTED</div>
+            <div class="info-badge">Precision ±2mm</div>
+          </div>
+        </div>
+        <!-- SLAM tech specs -->
+        <div class="glass-panel rounded-2xl p-6">
+          <div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-primary">analytics</span><h4 class="font-semibold text-on-surface">巡航轨迹</h4></div>
+          <div class="space-y-3 mb-5">
+            <div class="flex justify-between items-center p-3 bg-surface-container-low rounded-xl">
+              <span class="text-xs text-on-surface-variant/70">算法核心</span>
+              <span class="text-xs font-semibold text-on-surface">深度强化学习 (Deep RL)</span>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-surface-container-low rounded-xl">
+              <span class="text-xs text-on-surface-variant/70">传感器融合</span>
+              <span class="text-xs font-semibold text-on-surface">LiDAR + 红外 + 超声波</span>
+            </div>
+            <div class="flex justify-between items-center p-3 bg-surface-container-low rounded-xl">
+              <span class="text-xs text-on-surface-variant/70">避障响应</span>
+              <span class="text-xs font-semibold text-on-surface">实时重新规划 (&lt; 15ms)</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary">sensors</span><h4 class="font-semibold text-on-surface">智能感知</h4></div>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="bg-surface-container-low rounded-xl p-3 text-center"><div class="w-2 h-2 rounded-full bg-green-400 mx-auto mb-1 animate-pulse"></div><p class="text-xs font-semibold text-on-surface">Infrared</p><p class="text-[10px] text-green-600">Active</p></div>
+            <div class="bg-surface-container-low rounded-xl p-3 text-center"><div class="w-2 h-2 rounded-full bg-blue-400 mx-auto mb-1 animate-pulse"></div><p class="text-xs font-semibold text-on-surface">Ultrasonic</p><p class="text-[10px] text-blue-600">Scanning</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 情感化交互设计 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">FURWHISPER 情感化交互设计</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">探索宠物与机器人之间超越指令的情感纽带。通过仿生视觉语言与感官互动，赋予冷冰冰的硬件以温暖的"灵魂"。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Emotion states -->
+        <div class="glass-panel rounded-2xl p-6">
+          <div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-primary">face</span><h4 class="font-semibold text-on-surface">表情阵列</h4></div>
+          <div class="space-y-3 mb-5">
+            <div class="flex items-center gap-4 bg-surface-container-low rounded-xl p-4">
+              <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center text-xl">😊</div>
+              <div><p class="font-semibold text-sm text-on-surface">开心 (Happy)</p><p class="text-xs text-on-surface-variant/70">双眼呈现圆弧状，配合轻微震动</p></div>
+            </div>
+            <div class="flex items-center gap-4 bg-surface-container-low rounded-xl p-4">
+              <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl">🤔</div>
+              <div><p class="font-semibold text-sm text-on-surface">好奇 (Curious)</p><p class="text-xs text-on-surface-variant/70">单眼微眯，头部呈倾斜交互状态</p></div>
+            </div>
+            <div class="flex items-center gap-4 bg-surface-container-low rounded-xl p-4">
+              <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-xl">😴</div>
+              <div><p class="font-semibold text-sm text-on-surface">充电 (Charging)</p><p class="text-xs text-on-surface-variant/70">呼吸感光效，模拟猫咪熟睡状态</p></div>
+            </div>
+          </div>
+          <p class="text-xs text-on-surface-variant/60">表情阵列采用极简的像素点阵技术，确保在不同光线下宠物均能清晰识别机器人的状态。</p>
+          <!-- LED strips -->
+          <div class="grid grid-cols-3 gap-2 mt-4">
+            <div class="rounded-xl p-3 text-center bg-amber-50"><div class="w-4 h-4 rounded-full led-amber mx-auto mb-1"></div><p class="text-[10px] font-semibold text-amber-700">警戒</p></div>
+            <div class="rounded-xl p-3 text-center bg-sky-50"><div class="w-4 h-4 rounded-full led-sky mx-auto mb-1"></div><p class="text-[10px] font-semibold text-sky-700">平静</p></div>
+            <div class="rounded-xl p-3 text-center bg-pink-50"><div class="w-4 h-4 rounded-full led-pink mx-auto mb-1"></div><p class="text-[10px] font-semibold text-pink-700">喜悦</p></div>
+          </div>
+        </div>
+        <!-- Sensory design -->
+        <div class="glass-panel rounded-2xl p-6">
+          <div class="flex items-center gap-2 mb-4"><span class="material-symbols-outlined text-primary">psychology</span><h4 class="font-semibold text-on-surface">感官共鸣设计</h4></div>
+          <p class="text-sm text-on-surface-variant mb-5">我们集成了多维度的交互模组，包括可替换的环保羽毛挂件与安全的低功耗激光投射器。机器人会根据猫咪的心率与活动强度，智能调节互动节奏。</p>
+          <div class="space-y-3 mb-5">
+            <div class="flex items-start gap-3 bg-surface-container-low rounded-xl p-4">
+              <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">toys</span>
+              <div><p class="font-semibold text-sm text-on-surface">智能羽毛</p><p class="text-xs text-on-surface-variant/70">模拟猎物不规则运动轨迹</p></div>
+            </div>
+            <div class="flex items-start gap-3 bg-surface-container-low rounded-xl p-4">
+              <span class="material-symbols-outlined text-primary text-[18px] mt-0.5">flare</span>
+              <div><p class="font-semibold text-sm text-on-surface">激光交互</p><p class="text-xs text-on-surface-variant/70">眼部集成低功耗防直视激光</p></div>
+            </div>
+          </div>
+          <!-- 逗猫互动图 -->
+          <div class="overflow-hidden rounded-2xl">
+            <img class="img-zoom w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRUnQH3YZhHPuMNxy0kJhqzHGEfEQ9eojr_VZNxTiT2Exq5NIN45tkbEotc6eYBnKxTWfO1etHExC3s9E0bQs7Gjfh3om4FSJ1dN_ixIP1rjCdsdtxgKvJNeHW0m0zv-nDbx1Gx7CLHFGy7aXd6AMsqgSXhHuZI0MRBT-3Wz_ZB49zZbHWGRD-_vh_ck79eDvN2Beh2rwGQbQrKa7T7yHXdXyDSZC8vLis7LB1PotOfyY1nc0yOgki7t_XBXnHdN0o9IBxc8qkogTm" alt="逗猫互动"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- APP 综合场景 -->
+    <div class="glass-card rounded-squircle p-8 md:p-12 mb-10 reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-2">FURWHISPER: 综合应用场景展示</h3>
+      <p class="font-body-md text-on-surface-variant mb-8">从机器人视角到指尖操控，FURWHISPER 重新定义了人、宠与智能设备的交互边界。</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- App remote -->
+        <div class="glass-panel rounded-2xl p-6">
+          <h4 class="font-semibold text-on-surface mb-2">APP 端远程操控界面</h4>
+          <p class="text-xs text-on-surface-variant/70 mb-4">基于自研 Aether-Link 协议，实现毫秒级超低延迟画面传输。</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <div class="info-badge text-[10px]"><span class="material-symbols-outlined text-[12px]">videocam</span>4K 超清实时直播</div>
+            <div class="info-badge text-[10px]"><span class="material-symbols-outlined text-[12px]">shutter_speed</span>智能互动抓拍</div>
+          </div>
+          <div class="overflow-hidden rounded-2xl">
+            <img class="img-zoom w-full h-52 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3m0cfzPZBJEJ81TKcMx0LC4Ww019eIc-neyocBdKTPcZAaui9opDjk8N6L_2QG1ckofJpWeI8pdfNS2WxJX5N83kPpkMBDl1DCUnUvl4hO2YdRQFM2bJKrqvZiUn31Tqv0IbMtWAyez1flhGreZ0N3CcvlEAuaYwZ41aKJqguAgk86hYrF2DlLwiwZdl9tovFKPhlHLAua6oWYagJotzDIXoOIHcYEklc9epM90PA1tO2_cK-0cqQIVFxfOAQeDgTU8tVUADYTOa5" alt="App界面"/>
+          </div>
+        </div>
+        <!-- Growth log -->
+        <div class="glass-panel rounded-2xl p-6">
+          <h4 class="font-semibold text-on-surface mb-2">成长日志</h4>
+          <p class="text-xs text-on-surface-variant/70 mb-4">AI 自动生成每日精彩瞬间，记录萌宠成长每一步。</p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="overflow-hidden rounded-xl w-16 h-16 flex-shrink-0"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaHJaiyWnwX3Nq3pO0e0nwnkhZixz9IMwltIuVf6Zp-qvKeSeErGbqKtV3rGCdcjM0ftbwcSwYu54XYmTG_jqC0oANoq3bKDN1j_0qYpnWzWylYeec9TYeeDQ8LxBYny7nzezNmJrMvaJmTG3C6gWa4F7KqXc6IOhbj2SW5_jfjBCS2G9BYbwf1IWwQb3osvQd5NvT9EYNQc0eBHoAJIVtttoCgIne4nx6H1YR_arcvQM0ZxkNnTEieISuUrda77mklMqGg3TRJpzZ" alt="日志1"/></div>
+              <div><p class="text-xs font-semibold text-on-surface">完成了 500 步探索</p><p class="text-[10px] text-on-surface-variant/50">14:20 PM</p></div>
+            </div>
+            <div class="flex items-center gap-3 bg-surface-container-low rounded-xl p-3">
+              <div class="overflow-hidden rounded-xl w-16 h-16 flex-shrink-0"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNucBi3k1MrJilCrV4g7aaq_GYot60_VAFnbMiUv0VMkg0yxeh-BLafw5EyWar5DzuvmpQ4oDQyZ_s5ysQETp7pDclqWHH4vxg2YdZsmnwbjM6mD9dGCxBrJu5B4zhalrW-LgLCqJsfZcTV3GwC1obWTHP0x2xeWLTArHezzKlghaSbWF7H9ei3Gax9_VgZmxWshUpjJTJYv1XgD1FMIleW5RAU-taJ2HJm7gd-T7Lca0HN_evCBTrlY7jGRXixumW68XnRcj69Pru" alt="日志2"/></div>
+              <div><p class="text-xs font-semibold text-on-surface">检测到愉悦情绪</p><p class="text-[10px] text-on-surface-variant/50">16:45 PM</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="glass-card rounded-squircle p-10 md:p-14 text-center reveal">
+      <h3 class="font-headline-md text-[24px] text-on-surface mb-4">即刻开启未来宠护生活</h3>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-md font-semibold hover:scale-95 transition-transform shadow-lg">前往商店探索</button>
+        <button class="glass-panel px-8 py-4 rounded-full font-headline-md font-semibold hover:bg-white/80 transition-all text-on-surface flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">play_circle</span>观看演示
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<section id="about"></section>
+<footer class="py-20 px-container-padding-mobile md:px-container-padding-desktop">
+  <div class="max-w-7xl mx-auto">
+    <div class="glass-panel rounded-squircle p-10 md:p-14 flex flex-col md:flex-row items-start justify-between gap-10">
+      <div>
+        <p class="font-display-lg font-bold text-[28px] text-on-surface mb-2">ZHOU ZIHAN</p>
+        <p class="text-on-surface-variant/60 text-sm mb-1">工业与交互设计作品集</p>
+        <p class="text-on-surface-variant/40 text-xs">专注探索技术与人性的情感连接。</p>
+        <p class="text-on-surface-variant/40 text-xs mt-4">© 2024 ZHOU ZIHAN. 保留所有权利。</p>
+      </div>
+      <div class="flex flex-col gap-2 text-sm">
+        <p class="font-bold text-[11px] uppercase tracking-[0.15em] text-primary/50 mb-2">作品导航</p>
+        <a href="#graphic"    class="text-on-surface-variant hover:text-primary transition-colors">01 图文设计</a>
+        <a href="#hemuji"     class="text-on-surface-variant hover:text-primary transition-colors">02 合木集</a>
+        <a href="#vitaflow"   class="text-on-surface-variant hover:text-primary transition-colors">03 VITAFLOW</a>
+        <a href="#onde"       class="text-on-surface-variant hover:text-primary transition-colors">04 Onde</a>
+        <a href="#furwhisper" class="text-on-surface-variant hover:text-primary transition-colors">05 FURWHISPER</a>
+      </div>
+      <div class="flex flex-col gap-3 text-sm">
+        <p class="font-bold text-[11px] uppercase tracking-[0.15em] text-primary/50 mb-2">联系方式</p>
+        <a href="#" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">open_in_new</span>领英</a>
+        <a href="#" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">open_in_new</span>设计社区</a>
+        <a href="#" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">mail</span>电子邮件</a>
+        <a href="#" class="flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">privacy_tip</span>隐私政策</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════ -->
+<script>
+// ── Mobile menu ──
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+hamburger.addEventListener('click', (e) => { e.stopPropagation(); mobileMenu.classList.toggle('open'); });
+document.addEventListener('click', (e) => {
+  if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) closeMobileMenu();
+});
+
+// ── Active nav highlight on scroll ──
+const sections = ['graphic','hemuji','vitaflow','onde','furwhisper'];
+const navLinks  = document.querySelectorAll('.nav-link');
+
+function updateActiveNav() {
+  const scrollY = window.scrollY + 140;
+  let current = sections[0];
+  for (const id of sections) {
+    const el = document.getElementById(id);
+    if (el && el.offsetTop <= scrollY) current = id;
+  }
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href').replace('#','');
+    link.classList.toggle('active', href === current);
+  });
+}
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
+
+// ── Navbar shadow ──
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.style.boxShadow = window.scrollY > 60
+    ? '0 8px 32px rgba(0,0,0,0.1)'
+    : '0 20px 50px -12px rgba(0,0,0,0.05)';
+}, { passive: true });
+
+// ── Scroll reveal ──
+const reveals = document.querySelectorAll('.reveal');
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
+reveals.forEach(el => revealObs.observe(el));
+
+// ── Progress bars animate when visible ──
+const progressBars = document.querySelectorAll('.progress-fill');
+const barObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const el = e.target;
+      const w = el.style.width;
+      el.style.width = '0';
+      setTimeout(() => { el.style.width = w; }, 100);
+      barObs.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+progressBars.forEach(el => barObs.observe(el));
+</script>
+</body>
+</html>
