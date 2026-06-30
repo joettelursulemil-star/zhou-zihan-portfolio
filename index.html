@@ -1418,9 +1418,126 @@ body::selection, *::selection { background: #e9d5ff; color: #6a5a7e; }
 </section>
 
 <!-- ═══════════════════════════════════════
-     FOOTER
+     SECTION 06 — 关于我
 ═══════════════════════════════════════ -->
-<section id="about"></section>
+<div class="section-sep"></div>
+<section id="about" class="relative pt-20 pb-24 px-container-padding-mobile md:px-container-padding-desktop scroll-mt-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="flex items-end gap-4 mb-16 reveal">
+      <span class="section-watermark">06</span>
+      <div class="pb-3">
+        <p class="font-label-caps text-label-caps text-primary/50 uppercase tracking-[0.2em] mb-2">About Me</p>
+        <h2 class="font-display-lg text-[48px] md:text-[64px] text-on-surface leading-none kerning-tight">关于我</h2>
+      </div>
+    </div>
+
+    <!-- About Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 reveal">
+      <!-- Left Column: Portrait & Intro -->
+      <div class="lg:col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div class="w-48 h-48 rounded-full overflow-hidden mb-6 border-4 border-primary/10 shadow-lg">
+          <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApYUWpidGD4TRmVL34u77flq-LmSj9SHPyQDONfUJaC0c9YS41BMfiEUCmkddl3R0qS1EUiIN5tZfDkgXrB8xEGozLAUPkcU4UGgfMLFZBZ8A1dbhZaFaAXvPJwXQGPw5QGagJw0Z8Wgfejq-z2OHROH69ENForlc7AcjZy-NMlKfHL5J1jlEjBMYSlbi-k_aVTHD_glL04113uBgNFp2sziraax2ZSYk2VeY-0xmoJBXkku9snOplbN7lv1WvR7e40U7SJqkqpHQM" alt="周子寒"/>
+        </div>
+        <h3 class="font-headline-md text-2xl text-on-surface mb-1">周子寒 Zhou Zihan</h3>
+        <p class="text-primary font-semibold text-sm mb-4">设计实习生 | 22岁</p>
+        <div class="glass-panel rounded-xl p-4 w-full mb-6">
+          <p class="text-xs text-on-surface-variant font-semibold mb-1">浙江科技大学 (本科)</p>
+          <p class="text-[11px] text-on-surface-variant/70">工业设计专业 | 2023 - 2027</p>
+        </div>
+        <p class="font-body-md text-on-surface-variant text-sm leading-relaxed">
+          “我是一名正在成长中的工业设计师。相信好的设计源于对细节的执着和对用户的理解。我不仅深耕手绘、建模、渲染，也主动学习产品开发与项目管理知识，力求让设计不止于纸面，能变为实体。”
+        </p>
+      </div>
+
+      <!-- Middle Column: Experience Timeline -->
+      <div class="lg:col-span-1">
+        <h4 class="font-semibold text-on-surface mb-6 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-[20px]">history</span>设计学习经历
+        </h4>
+        <div class="relative border-l border-primary/20 pl-6 ml-3 space-y-8">
+          <!-- Item 1 -->
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-primary-container border-4 border-background"></span>
+            <p class="text-xs text-primary font-semibold mb-1">2023.09 - 2024.06</p>
+            <h5 class="font-semibold text-sm text-on-surface mb-2">基础技能提升</h5>
+            <p class="text-xs text-on-surface-variant leading-relaxed">练产品快速草图表达，学习设计元素与构成。将几何美学应用于产品设计，参与工业设计大赛。</p>
+          </div>
+          <!-- Item 2 -->
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-primary-container border-4 border-background"></span>
+            <p class="text-xs text-primary font-semibold mb-1">2024.09 - 2025.06</p>
+            <h5 class="font-semibold text-sm text-on-surface mb-2">数字设计与可视化</h5>
+            <p class="text-xs text-on-surface-variant leading-relaxed">学习 PS, AI 平面软件，完成产品海报排版. 运用 QGIS 地理信息可视化，拓展跨领域思维。3D 打印制作原型，验证设计优化。</p>
+          </div>
+          <!-- Item 3 -->
+          <div class="relative">
+            <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-primary-container border-4 border-background"></span>
+            <p class="text-xs text-primary font-semibold mb-1">2025.09 - 2026.06</p>
+            <h5 class="font-semibold text-sm text-on-surface mb-2">产品设计与落地实践</h5>
+            <p class="text-xs text-on-surface-variant leading-relaxed">完成多个完整产品设计项目，掌握设计全流程。精通用户调研与人机分析，熟练建模渲染出图。了解常用材料工艺，具备基础结构设计能力。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Skills, Awards & Hobbies -->
+      <div class="space-y-8">
+        <!-- Skills -->
+        <div>
+          <h4 class="font-semibold text-on-surface mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">build</span>个人技能
+          </h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="info-badge text-xs">Photoshop</span>
+            <span class="info-badge text-xs">Illustrator</span>
+            <span class="info-badge text-xs">SolidWorks</span>
+            <span class="info-badge text-xs">Rhino</span>
+            <span class="info-badge text-xs">KeyShot</span>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div>
+          <h4 class="font-semibold text-on-surface mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>获奖及证书
+          </h4>
+          <ul class="space-y-3 text-xs text-on-surface-variant">
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">verified</span>
+              <span>2023-2024 学年 学业优秀一等奖学金</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">verified</span>
+              <span>2024-2025 学年 学业优秀二等奖学金</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-primary text-[16px] mt-0.5">verified</span>
+              <span>JLPT 日语能力考试 N1 证书</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hobbies -->
+        <div>
+          <h4 class="font-semibold text-on-surface mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-[20px]">volunteer_activism</span>兴趣爱好
+          </h4>
+          <div class="flex gap-4 text-xs text-on-surface-variant">
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-primary text-[18px]">fitness_center</span>运动
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-primary text-[18px]">menu_book</span>阅读
+            </div>
+            <div class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-primary text-[18px]">movie</span>观影
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <footer class="py-20 px-container-padding-mobile md:px-container-padding-desktop">
   <div class="max-w-7xl mx-auto">
     <div class="glass-panel rounded-squircle p-10 md:p-14 flex flex-col md:flex-row items-start justify-between gap-10">
