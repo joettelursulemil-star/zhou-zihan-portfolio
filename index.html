@@ -336,7 +336,8 @@ body::selection, *::selection { background: #e9d5ff; color: #6a5a7e; }
   </div>
 
   <div class="flex items-center gap-3">
-    <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm font-semibold hover:scale-95 active:scale-90 transition-transform shadow-lg">联系我</button>
+    <button onclick="navigator.clipboard.writeText('han15019413506').then(()=>alert('我的微信号：han15019413506\n已复制到剪贴板，去微信添加我吧！')).catch(()=>alert('我的微信号：han15019413506'))"
+        class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-sm text-label-sm font-semibold hover:scale-95 active:scale-90 transition-transform shadow-lg">联系我</button>
     <button id="hamburger" class="md:hidden p-2 rounded-full hover:bg-primary-container transition-colors">
       <span class="material-symbols-outlined text-[20px]">menu</span>
     </button>
