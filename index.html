@@ -1617,18 +1617,6 @@ const barObs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 progressBars.forEach(el => barObs.observe(el));
-<script>
-    // 换了一个名字 customNavLinks，避免报错冲突
-    const customNavLinks = document.querySelectorAll('.nav-link');
-    
-    customNavLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            // 1. 把所有导航项的紫线（active）都去掉
-            customNavLinks.forEach(l => l.classList.remove('active'));
-            // 2. 给当前点击的这个导航项加上紫线
-            this.classList.add('active');
-        });
-    });
-</script>
+
 </body>
 </html>
