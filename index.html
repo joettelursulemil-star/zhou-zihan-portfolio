@@ -1617,6 +1617,20 @@ const barObs = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.5 });
 progressBars.forEach(el => barObs.observe(el));
+</script>
+  <script>
+    // 专门处理导航栏点击加紫线的逻辑
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // 1. 把所有导航项的紫线（active）都去掉
+            navLinks.forEach(l => l.classList.remove('active'));
+            // 2. 给当前点击的这个导航项加上紫线
+            this.classList.add('active');
+        });
+    });
+</script>
 
 </body>
 </html>
